@@ -1,0 +1,45 @@
+.videos {
+    width: 100%;
+
+    .video {
+        width:  50%;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+        width: 70%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &#lola iframe {
+            height: calc(100% * 9 / 13.1111);
+        }
+
+
+
+        &#floriane {
+            margin-left: auto;
+            margin-bottom: 200px;
+        }
+
+        &#lola.wokeup {
+            margin: auto;
+            margin-top: 10em;
+        }
+
+        &#lola.daydream {
+            width: 80%;
+            margin: auto;
+
+            iframe {
+                height: calc(100% * 9 / 10.5);
+            }
+        }
+    }
+}

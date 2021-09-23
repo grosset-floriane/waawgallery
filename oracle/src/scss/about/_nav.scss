@@ -1,0 +1,16 @@
+#secondary-nav {
+    display: block;
+    font-style: 1em;
+    font-family: $font-title;
+
+    li {
+        line-height: 1.5em;
+        font-size: 1em;
+        list-style: url('../img/puce1.png');
+        list-style-position: inside;
+        a {
+            color: $green;
+            padding-left: .5em;
+        }
+    }
+}

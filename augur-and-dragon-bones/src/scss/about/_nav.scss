@@ -1,0 +1,41 @@
+#secondary-nav {
+    display: block;
+    font-style: 1em;
+    font-family: 'Constantia', serif;
+    margin-top: 3.5em;
+    list-style: none;
+    margin-left: 1.2em;
+
+    li {
+        line-height: 1.5em;
+        font-size: 1.2em;
+        
+        color: $beige;
+        list-style-position: inside;
+        margin: 0;
+        a {
+            color: $beige;
+            padding-left: .5em;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &::before {
+            content: "\2022";
+            color: $beige;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+
+            
+          }
+        &:hover::before {
+
+                color: $white;
+            
+        }
+    }
+}

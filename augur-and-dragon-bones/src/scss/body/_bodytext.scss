@@ -1,0 +1,32 @@
+p {
+    line-height: 1.5em;
+    margin: 1em 0;
+    text-align: justify;
+    font-family: 'Constantia', serif;
+    color: $white;
+    font-size: 1.4rem;
+
+    &.credits {
+        font-size: 1.5em;
+        margin: 2em 0;
+        color: $turquoise;
+        line-height: 30px;
+    }
+
+    &.message {
+        color: $purple;
+        font-weight: bold;
+    }
+}
+
+.intro-sandy p {
+    color: $beige;
+    &:first-child {
+        font-style: oblique;
+        color: $white;
+    }
+}
+
+.presentation-soren p {
+    color: $blue;
+}

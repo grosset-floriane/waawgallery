@@ -1,0 +1,29 @@
+nav {
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+
+    li {
+        line-height: 1.3em;
+        font-size: 1.3em;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+
+    
+
+    .logoletters {
+        &.rotatedW {
+            top: 1px;
+        }
+    
+        &.lastW {
+            left: -3px;
+        }
+    }
+}

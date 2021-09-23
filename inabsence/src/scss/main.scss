@@ -1,0 +1,35 @@
+@import 'variables';
+
+@import 'reset';
+
+@import 'body/links';
+
+@import 'menu/logoletters';
+
+// Menu styles
+@import 'menu/header';
+@import 'menu/button';
+@import 'menu/nav';
+
+// Body 
+@import 'body/main';
+@import 'body/bodytext';
+@import 'body/headings';
+@import 'body/links';
+
+// Footer
+@import 'footer/footer';
+
+// Logos
+@import 'logos/waawlogo';
+
+// About page
+@import 'logos/sponsors';
+@import 'about/newsletterform';
+
+// Entrance Page 
+@import 'entrancepage/enterbutton';
+@import 'entrancepage/text';
+
+
+

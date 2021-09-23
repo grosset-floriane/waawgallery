@@ -1,0 +1,10 @@
+p {
+    line-height: 25px;
+
+    &.credits {
+        font-size: 1.5em;
+        margin: 2em 0;
+        color: $turquoise;
+        line-height: 30px;
+    }
+}

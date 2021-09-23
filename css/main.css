@@ -1,0 +1,133 @@
+:root {
+    --font: 'Open Sans Condensed', sans-serif;
+    --title-font: 'Raleway', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 150px;
+}
+
+main {
+    padding: 10px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+#secondary-nav {
+    display: block;
+    font-style: 1em;
+    font-family: var(--title-font);
+}
+
+#secondary-nav li {
+    line-height: 1.5em;
+    font-size: 1em;
+    list-style: circle inside;
+}
+
+
+.abstract {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    font-weight: 800;
+}
+
+h3 {
+    margin-top: 3em;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+}
+
+h2, h3 {
+    font-family: var(--title-font);
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+#newsletter {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+#newsletter fieldset span {
+    font-family: var(--title-font) !important;
+    font-size: 1.4em !important;
+    font-weight: normal !important;
+}
+
+.confirmation, .thanks {
+    line-height: 23px;
+    text-align: center;
+    font-size: 19px;
+    width: 50%;
+    margin: auto;
+    padding-top: calc((100vh - 350px) /2);
+    height: calc(100vh - 200px);
+
+}
+
+.intro-emilie p {
+    line-height: 2em;
+}
+
+.presentation-emilie {
+    line-height: 1.3em;
+}
+
+hr {
+    margin: 2em 0;
+}
+
+.enter-button {
+    width: 125px;
+    margin: auto;
+    margin-top: 2em;
+    padding: 10px;
+    border: 1px solid
+    white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.enter-button a {
+    text-decoration: none;
+}
+
+.grant-logo {
+    width: 150px;
+}
+
+footer {
+    font-size: .7em;
+}
+
+
+@media (min-width: 900px) {
+    
+    main, footer {
+        width: 800px;
+        margin: auto;
+    }
+
+    .abstract {
+        font-size: 1.2em;
+        width: 75%;
+    }
+}
+

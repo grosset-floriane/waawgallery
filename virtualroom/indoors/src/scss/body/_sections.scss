@@ -1,0 +1,545 @@
+.diconnected-section {
+    margin: auto;
+    margin-top: 70vh;
+    margin-bottom: 70vh;
+    width: 75%;
+    min-width: 350px;
+
+    &:first-child {
+        margin-top: 20vh;
+    }
+
+    &.windows {
+        width: 100%;
+
+        &.first {
+            margin-top: 20vh;
+        }
+
+
+        &.right img {
+
+            margin-left: auto;
+        }
+
+        img {
+            width: 30%;
+            margin-bottom: 1em;
+            min-width: 400px;
+        }
+    }
+
+
+
+    &#letterflo {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        > img {
+            width: 30vw;
+            height: calc(30vw * 7 / 5);
+            margin-right: 1em;
+            object-fit: cover;
+            min-width: 300px;
+            min-height: calc(300px * 7 / 5);
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+        div {
+            height: calc(30vw * 7 / 5);
+            overflow-y: scroll;
+            min-height: calc(300px * 7 / 5);
+            width: calc(100% - 30vw - 1em);
+
+            img {
+                margin-bottom: 1em;
+            }
+
+        }
+    }
+
+    &#squaretexts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            width: 29%;
+            height: 29%;
+            margin: .5em;
+            min-width: 300px;
+            
+        }
+    }
+}
+
+.device {
+    background-image: url('../img/afterworld/mobilebackground.png');
+    width: 328px;
+    height: 648px;
+    background-size: cover;
+    padding: 109px 19px 20px 22px;
+    position: relative;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    @include desktop {
+        background-image: url('../img/afterworld/computerbackground.png');
+        width: 756px;
+        padding: 19px 64px 92px 67px;
+        height: 451px;
+        bottom: 0;
+        margin-bottom: 0;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+
+        
+
+
+        &::after {
+            content: '';
+            display: block;
+            background-image: url(../img/afterworld/computerbottom.png);
+            width: 626px;
+            position: relative;
+            bottom: 12px;
+            height: 16px;
+            background-size: cover;
+        }
+    }
+
+    @include largedesktop {
+        width: 950px;
+        height: 568px;
+        padding: 25px 81px 99px 89px;
+
+        &::after {
+        width: 780px;
+        bottom: 3px;
+        height: 20px;
+        }
+    }
+
+    a {
+        color: black;
+    }
+    header {
+        margin: 0 !important;
+        width: 288px;
+        background-color: white;
+
+        &::before {
+            content: '';
+            width: 288px;
+            height: 16px;
+            background-image: url('../img/afterworld/mobiletop.png');
+            display: block;
+            background-size: cover ;
+            @include desktop {
+                display: none;
+            }
+
+        }
+
+        a {
+
+            
+            display: flex;
+            padding: 5px 10px;
+            color: black;
+            align-items: center;
+
+
+
+            p {
+                margin: 0;
+                
+                font-weight: bold;
+                line-height: 97%;
+                span {
+                    font-weight: normal;
+                    color: gray;
+                    font-size: .9em;
+                }
+            }
+
+            img {
+                width: 15px;
+                height: 27px;
+            }
+        }
+
+        h4 {
+            color: black;
+            text-align: center;
+            padding: 7px;
+            width: 288px;
+        }
+
+        @include desktop {
+            width: 613px;
+            position: relative;
+            background-size: cover;
+            height: 33px;
+            clip-path: initial;
+            left: 6px;
+            top: 1px;
+
+            &.background-1 {
+                background-image: url('../img/afterworld/computer-menu1.jpg');
+            }
+
+            &.background-2 {
+                background-image: url('../img/afterworld/computer-menu2.jpg');
+            }
+
+            &.background-3 {
+                background-image: url('../img/afterworld/computer-menu3.jpg');
+            }
+
+            &.background-4 {
+                background-image: url('../img/afterworld/computer-menu4.jpg');
+            }
+
+            &.background-5 {
+                background-image: url('../img/afterworld/computer-menu5.jpg');
+            }
+
+            &.background-plus {
+                background-image: url('../img/afterworld/computer-menu-plus.jpg');
+            }
+
+            nav {
+                display: flex;
+                font-size: 0.6em;
+                padding-left: 6px;
+
+                @include largedesktop {
+                    padding-left: 5px;
+            
+                }
+
+                a {
+                    width: 105px;
+                    position: relative;
+                    top: -3px;
+                    text-align: center;
+
+                
+
+                    &.plus-link {
+                        width: 12px;
+                        padding: 0;
+                        text-align: center;
+                        padding-left: 2px;
+                    }
+
+
+                    @include largedesktop {
+                        padding-left: 16px;
+                        padding-right: 0;
+                        width: 132px;
+                        top: -1px;
+
+                        &.plus-link {
+                            padding-left: 11px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+
+            p.breadcrumbs {
+                color: black;
+                margin: 0;
+                font-size: .5em;
+                position: relative;
+                top: -4px;
+                left: 8em;
+
+                @include largedesktop {
+                    top: 2px;
+                    left: 10em;
+                }
+            }
+            
+        }
+
+        @include largedesktop {
+            width: 776px;
+            height: 42px;
+            left: 2px;
+            top: 1px;
+        }
+        
+    }
+
+    form {
+        position: absolute;
+        top: 499px;
+        width: 288px;
+        align-items: center;
+
+        @include desktop {
+            top: 259px;
+            right: 77px;
+            width: 287px;
+            align-items: flex-end;
+            background-color: transparent !important;
+        }
+
+        @include largedesktop {
+            top: 347px;
+            right: 98px;
+            width: 282px;
+        }
+
+        textarea {
+            height: 30px;
+            border-radius: 15px;
+            background-color: $greymessenger;
+            padding-left: 15px;
+            color: black;
+            font-size: 1.1em;
+            outline: none;
+            border: none;
+            resize: none;
+            width: 237px;
+            padding-top: 5px;
+            font-family: 'Roboto', sans-serif;
+
+            @include desktop {
+                height: 90px;
+                font-size: .9em;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+
+            &::placeholder {
+                padding-left: 0;
+                color: grey;
+                font-style: oblique;
+                font-size: 1em;
+                
+            }
+
+
+
+        }
+
+        button {
+            background-color: white;
+            img {
+                width: 20px;
+            }
+
+            @include desktop {
+                padding-bottom: 0;
+                margin-bottom: 5px;
+                background-color: transparent !important;
+            }
+        }
+        
+    
+    }
+}
+
+.afterworld {
+    background-color: white;
+
+    @include desktop {
+        clip-path: polygon(1% 1%,99% 1%,100% 97.5%,0% 97.5%); 
+    }
+    
+
+    &.question-answers {
+        position: relative;
+        top: -1px;
+        height: 350px;
+        overflow-y: scroll;
+
+        @include desktop {
+            height: 318px;
+            top: -4px;
+        }
+
+        @include largedesktop {
+            height: 388px;
+            top: -3px;
+            clip-path: polygon(0.3% 1%,99.8% 1%,100% 100%,0 100%);
+
+        }
+    }
+
+    
+        .question{
+            padding: 10px;
+            
+            p {
+                width: 75%;
+                margin: 0;
+                margin-left: auto;
+                background-color: $bluemessenger;
+                border-radius: 15px;
+                padding: 10px;
+                text-align: left;
+
+                
+            }
+
+            @include desktop {
+                position: absolute;
+                width: 602px;
+                right: 0;
+                height: 211px;
+
+                p {
+                    width: 45%;
+                    font-size: .9em;
+                }
+            }
+
+            @include largedesktop {
+                height: 283px;
+            }
+            
+    
+
+        } 
+
+        p.answer-received {
+            position: relative;
+            margin-top: 1em;
+            background: blanchedalmond;
+
+            @include desktop {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+            }
+
+            @include largedesktop {
+                
+
+            }
+        }
+
+        .answers {
+            .message {
+                width: 75%;
+                background-color: $greymessenger;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 10px;
+                margin-bottom: 1em;
+                
+
+                p {
+                    margin: 0;
+                    text-align: left;
+                }
+
+                @include desktop {
+                    width: 45%;
+                     
+                    p {
+                        font-size: .9em;
+                    }
+                }
+            }
+
+        }
+
+        &#mobile-menu {
+            width: 288px;
+            height: 361px;
+            overflow-y: scroll;
+            position: relative;
+            top: -1px;
+            .menu-question {
+                display: flex;
+                align-items: center;
+
+                .right-arrow {
+                    width: 25px;
+                    height: 27px;
+                    
+                    margin: 10px;
+                    margin-left: auto;
+                    padding-left: 10px;
+                }
+
+                
+            }
+            
+        }
+        .question-img {
+            width: 40px;
+            
+            margin: 7px;
+
+            &.img-conversation {
+                height: 40px;
+                margin: 7px 10px;
+            }
+        }
+
+
+        &#plus {
+            height: 373px;
+            width: 288px;
+
+            @include desktop {
+                width: 625px;
+                height: 318px;
+            }
+
+            @include largedesktop {
+                width: 779px;
+                 height: 388px;
+            }
+        }
+
+
+        @include desktop {
+            &#question1 {
+                background-image: url('../img/afterworld/background1.png');
+                background-size: cover;
+                background-position: bottom;
+            }
+
+            &#question2 {
+                background-image: url('../img/afterworld/background2.png');
+                background-size: cover;
+            }
+
+            &#question3 {
+                background-image: url('../img/afterworld/background3.png');
+                background-size: cover;
+                background-position: bottom;
+            }
+
+            &#question4 {
+                background-image: url('../img/afterworld/background4.png');
+                background-size: cover;
+                background-position: bottom;
+            }
+
+            &#question5 {
+                background-image: url('../img/afterworld/background5.png');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        
+}
+
+
+
+

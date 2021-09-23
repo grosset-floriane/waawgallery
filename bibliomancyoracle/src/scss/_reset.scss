@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-body;
+    margin: 0;
+    scroll-behavior: smooth;
+
+    &.index {
+        background-color: $turquoise;
+    }
+
+    &.credits {
+        background-color: $purple;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+input {
+    border: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}

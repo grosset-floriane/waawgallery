@@ -1,0 +1,29 @@
+.text-message {
+    background-color: transparent;
+    color: $blue;
+    max-width: 80%;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 1em;
+
+    p {
+        color: $red;
+    }
+
+    &.self {
+        margin-left: auto;
+        p {
+            color: $yellow;
+        }
+        span {
+            text-align: right;
+            display: block;
+        }
+        
+    }
+
+    span {
+        font-size: .75em;
+    }
+
+}

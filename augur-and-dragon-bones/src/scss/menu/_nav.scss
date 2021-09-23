@@ -1,0 +1,73 @@
+nav {
+    display: none;
+    font-family: 'Constantia', serif;
+    
+
+    &.open {
+        display: block;
+        
+    }
+
+
+    li {
+        line-height: 45px;
+        text-align: left;
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        list-style: none;
+        margin-left: 10px;
+        color: $white;
+        text-transform: uppercase;
+
+        a {
+            color: $white;
+            
+        }
+
+        > ul > li {
+            margin-left: 1em;
+        }
+    }
+
+    
+
+    .logoletters {
+        &.firstW {
+            left: 5px;
+        }
+
+        &.rotatedW {
+            top: 1px;
+            left: 2px;
+        }
+    
+        &.lastW {
+            left: -4px;
+        }
+    }
+}
+
+body {
+
+    &.info header#waaw-header.open, &.credits header#waaw-header.open, &.about header#waaw-header.open {
+
+        li {
+             color: $beige;
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    color: $beige;
+                }
+            }
+
+        }
+    }
+
+   
+
+
+}
+

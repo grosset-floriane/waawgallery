@@ -1,0 +1,35 @@
+#message-form {
+    position: absolute;
+    bottom: calc(1em + 3px);
+    max-width: calc(800px - 2em - 25px);
+    margin: auto 1em;
+    width: calc(100% - 2em - 25px);
+    
+    
+
+
+    form {
+        
+        border-radius: 0;
+        font-family: $font-soren;
+        background-color: $yellow;
+        width: calc(100% + 20px);
+        
+
+        button {
+            background-color: $blue;
+            color: $yellow;
+            font-family: $font-soren;
+            margin: 0;
+            right: -2px;
+            position: relative;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input {
+            font-family: $font-soren;
+            font-size: 1em;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+header {
+    &.waaw-header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1.5em;
+        font-family: $font-title;
+        text-align: right;    
+    }
+
+    &:not(.waaw-header) {
+        margin-top: 40px;
+    }
+}
+

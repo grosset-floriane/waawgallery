@@ -1,0 +1,10 @@
+footer {
+    font-size: .7em;
+    padding: 10px;
+
+    @media (min-width: 900px) {
+        width: 800px;
+        margin: auto;
+        
+    }
+}

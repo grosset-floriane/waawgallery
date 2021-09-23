@@ -1,0 +1,255 @@
+/* Body */
+tw-story {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+tw-story{
+	background-attachment: fixed;
+  	background-size: cover;
+  	background-color: blanchedalmond;
+  	background-position: center center;
+}
+
+
+
+/* Main */
+tw-passage{
+	background-color: rgba(250, 250, 250, 0.7);
+  color: #330000;
+  padding: 1em;
+  font-weight: 300;
+  font-style: normal !important;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  font-style: 1.25em;
+}
+
+tw-passage[tags~="object"], tw-passage[tags~="furniture"] {
+  width: 100%;
+    
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    padding: 30px;
+  	overflow-y: scroll;
+    position: absolute;
+    
+    
+}
+
+tw-passage[tags~="reference"]{
+    background-color: blanchedalmond;
+    font-family: 'Lora', serif;
+}
+
+
+
+
+
+
+/* Sidebar (back and forth) */
+tw-sidebar {
+  position: absolute;
+    display: flex;
+    top: 1em;
+    right: 3em;
+    left: initial;
+    font-weight: bold;
+}
+tw-icon {
+	opacity: .6;
+  font-size: 2em;
+  margin: 0.1em 0.1em .1em .3em;
+  color: #cd4e27;
+}
+
+tw-icon:hover {
+    opacity: .8;
+    color: #9c1927;
+}
+
+tw-icon span {
+    position: relative;
+    top: -21px;
+}
+
+/* Titles */
+
+tw-story h1, tw-story h2, tw-story h3 {
+  	font-family: 'Raleway', sans-serif;;
+  	font-weight: 500;
+}
+
+tw-passage[tags~="reference"] h1, tw-passage[tags~="reference"] h2 {
+    font-family: 'Lora', serif;
+}
+
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.25em;}
+h3 {font-size: 1em;}
+
+
+/* Links */
+tw-link, a {color: #cd4e27; font-weight: normal;}
+tw-link:hover, a:hover {color: #9c1927;}
+tw-link:visited, a:visited {color: #cd4e27;}
+
+/* Media */
+img {width: 100%;}
+
+.video {width: 100%; position: relative; height: calc(100% * 9 / 13.1111);}
+.video iframe {width: 100%; height: 100%;
+  position: absolute; top: 0; left: 0;}
+
+.video.vimeo {min-height: 400px;}
+
+.spotify, .pdf iframe {
+width:100%;
+}
+
+.pdf iframe { height: 500px;}
+
+
+/* Phone - Text messages */
+.text-messages {
+max-width: 400px;
+    max-height: 700px;
+}
+.message-middle {
+max-height: 550px;
+    overflow-y: scroll;
+    position: relative;
+    top: -24px;
+    background-color: white;
+    z-index: 2;
+}
+.message-bottom {
+    position: relative;
+    top: -26px;
+    z-index: 1;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: blanchedalmond;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cd4e27;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9c1927;
+  }
+
+
+
+/* Backgrounds links */
+
+tw-story[tags~="window"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/curtain.jpg');  
+}
+
+tw-story[tags~="book-shelves"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/bookcase.png');  
+}
+
+tw-story[tags~="closet"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/closet.png');  
+}
+
+tw-story[tags~="door"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/door.png');  
+}
+
+tw-story[tags~="room"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/carpet.png');  
+}
+
+tw-story[tags~="bed"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/bed.png');  
+}
+
+tw-story[tags~="desk"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/desk.png');  
+}
+
+tw-story[tags~="desk-shelves"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/deskshelves.png');  
+}
+
+tw-story[tags~="computer"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/computer.png');  
+}
+
+tw-story[tags~="phone"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/phone.png');  
+}
+
+tw-story[tags~="speakers"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/speakers.png');  
+}
+
+tw-story[tags~="printer"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/printer.png');  
+}
+
+tw-story[tags~="bedside-book"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/bedsidebook.png');  
+}
+
+tw-story[tags~="dreams"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/dreams.png');  
+}
+
+tw-story[tags~="commode"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/commode.png');  
+}
+
+tw-story[tags~="notebook"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/notebook.png');  
+}
+
+tw-story[tags~="makeup"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/makeup.png');  
+}
+
+tw-story[tags~="masterthesis"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/masterthesis.png');  
+}
+
+tw-story[tags~="play"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/thesims.png');  
+}
+
+tw-story[tags~="sky"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/sky.png');  
+}
+
+tw-story[tags~="nature"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/nature.png');  
+}
+
+tw-story[tags~="out"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/outside.png');  
+}
+
+tw-story[tags~="chair"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/chair.png');  
+}
+
+tw-story[tags~="welcome"] {
+background-image: url('https://waawgallery.com/virtualroom/indoors/assets/img/room.png');  
+}
