@@ -8,6 +8,58 @@ if (!defined('MAGIC')) { // quotes importantes
     die;
 }
 
+$menu = "
+<ul>
+                <li>
+                    <a href=\"/\">
+                        Home
+                    </a> 
+                </li>     
+                <li><a href=\"/about.php\">
+                        About the 
+                        <span class=\"firstW logoletters\">W</span>
+                        <span class=\"rotatedW logoletters\">W</span>
+                        <span class=\"lastW logoletters\">W</span> 
+                        gallery
+                    </a>
+                </li>
+                <li>Virtual Room:
+                    <ul>
+                        <li>
+                            <a href=\"/virtualroom/indoors/info.php\">
+                                Indoors // Lola Jacrot & Floriane Grosset 
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>Archive:
+                    <ul>
+                        <li>
+                            <a href=\"/augur-and-dragon-bones/info.php\">
+                                Augur & Dragon Bones // Sandy Kalydjian
+                            </a>
+                        </li>
+                        <li>
+                            <a href=\"/moare/info.php\">
+                                Moare // Soren Krag
+                            </a>
+                        </li>
+                        <li>
+                            <a href=\"/oracle/info.php\">
+                                Bibliomancy Oracle // Lucila Mayol
+                            </a>
+                        </li>
+                        <li>
+                            <a href=\"/inabsence/info.php\">
+                                Inabsence // Emilie Wright
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+            </ul>
+";
+
+
 ?>
 
 <header id="waaw-header">
@@ -29,51 +81,12 @@ if (!defined('MAGIC')) { // quotes importantes
         </button>
 
         <nav id="nav">
-        <ul>
-                    <li><a href="../index.php">
-                        Home
-                        </a> 
-                    </li>     
-                    <li><a href="/about.php">About the <span class="firstW logoletters">W</span>
-            <span class="rotatedW logoletters">W</span>
-            <span class="lastW logoletters">W</span> gallery</a>
-                    </li>
-                                
-                    
-                    <li><a href="/augur-and-dragon-bones/">Current: Augur & Dragon Bones // Sandy Kalydjian</a></li>
-                    <li><a href="/virtualroom/indoors">Virtual Room: Indoors // Lola Jacrot & Floriane Grosset</a></li>
-                    <li>Archive:
-                        <ul>
-                            <li><a href="/moare">Moare // Soren Krag</a></li>
-                            <li><a href="/oracle/info-oracle.php">Bibliomancy Oracle // Lucila Mayol</a></li>
-                            <li><a href="/inabsence/info.php">Inabsence // Emilie Wright</a></li>
-                        </ul>
-                    
-                    
-                    </li>
-                    
-                    
-                </ul>
+            <?php echo $menu;?>
         </nav>
 
         <noscript>
             <nav>
-                <ul>
-                    <li><a href="../index.php">
-                        Home
-                        </a> 
-                    </li>   
-                    <li><a href="/about.php">About <span class="firstW logoletters">W</span>
-            <span class="rotatedW logoletters">W</span>
-            <span class="lastW logoletters">W</span> gallery</a>
-                    </li>               
-                    <hr>
-                    
-                    <li><a href="/oracle">Current exhibition: Bibliomancy Oracle // Lucila Mayol</a></li>
-                    <li><a href="/inabsence/info-inabsence.php">Archive: Inabsence // Emilie Wright</a></li>
-                    <li><a href="/virtualroom/indoors">Virtual Room: Indoors // Lola Jacrot & Floriane Grosset</a></li>
-                    
-                </ul>
+                <?php echo $menu;?>
             </nav>
 
         </noscript>

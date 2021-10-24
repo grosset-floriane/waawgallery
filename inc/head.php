@@ -25,6 +25,9 @@ if ( function_exists('getBrowser' ) ) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- SEO -->
+    <?php include('meta.php'); ?>
+
     <!-- Styles  -->
     <link rel="stylesheet" type="text/css" media="screen" href="/augur-and-dragon-bones/assets/css/style.min.css" />
     <?php 

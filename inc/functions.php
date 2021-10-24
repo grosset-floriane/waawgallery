@@ -87,4 +87,39 @@ function getBrowser()
     );
 }
 
+
+function printMetaTags($data) {
+    if (empty($data)) {return;}
+
+    $title = $data["title"];
+    $artworkFolder = $data["artwork_folder"];
+    $imageUrl = $data["image"];
+    $imageAlt = $data["image_alt"];
+    $shortDescription = $data["short_description"];
+
+    echo "
+    <meta name=\"author\" content=\"Floriane Grosset\">
+    <meta name=\"robots\" content=\"index, follow\">
+    <meta property=\"og:title\" content=\"$title\" />
+    <meta property=\"og:url\" content=\"https://waawgallery.com$artworkFolder\" />
+    <meta property=\"og:image\" content=\"$imageUrl\" />
+    <meta property=\"og:image:alt\" content=\"$imageAlt\" />
+    <meta property=\"og:image:width\" content=\"820\" />
+    <meta property=\"og:image:height\" content=\"630\" />
+    <meta property=\"og:type\" content=\"article\" />
+    <meta property=\"og:description\" content=\"$shortDescription\" />
+    <meta property=\"og:locale\" content=\"en_US\" />
+    
+    <!-- Twitter cards -->
+    <meta name=\"twitter:card\" content=\"summary_large_image\">
+    <meta name=\"twitter:site\" content=\"@FlosWebdesign\">
+    <meta name=\"twitter:creator\" content=\"@FlosWebdesign\">
+    <meta name=\"twitter:title\" content=\"$title\">
+    <meta name=\"twitter:description\" content=\"$shortDescription\">
+    <meta name=\"twitter:image\" content=\"$imageUrl\">
+    <meta name=\"twitter:image:alt\" content=\"$imageAlt\">
+    
+    ";
+}
+
 ?>
