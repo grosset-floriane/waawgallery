@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 <?php include 'inc/head.php';?>
-<title>Augur & Dragon Bones - Sandy Kalaydjian / WAAW Gallery</title>
+<title>Augur & Dragon Bones // Sandy Kalaydjian</title>
     <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 
 </head>
