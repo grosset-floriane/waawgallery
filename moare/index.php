@@ -36,7 +36,7 @@
         var currentURL = "<?php echo $uri;?>";
         
 
-        var url = "https://waawgallery.com/moare/";
+        var url = "/moare/";
 
         if( widthWindow <= 726 && heightWindow < 600 && screen != '726' ) {
             window.location.href = url + "?screen=726";

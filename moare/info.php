@@ -6,12 +6,12 @@
 <html lang="en">
 <head>
 <?php include 'inc/head.php';?>
-    <title>Moare - S&oslash;ren Krag / WAAW Gallery</title>
+    <title>Moare // S&oslash;ren Krag</title>
     <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
 
 </head>
 <body class="info">
-    <?php include '/inc/header.php'; ?>
+    <?php include '../inc/header.php'; ?>
 
     <main>
         <h1><a href="https://waawgallery.com"><img src="/img/logoYellow.png" alt="Logo WAAW gallery" class="logo"></a></h1>
@@ -54,7 +54,7 @@
     
     </main>
 
-    <?php  include '/inc/footer.php'; ?>
+    <?php  include '../inc/footer.php'; ?>
     
 </body>
 </html>

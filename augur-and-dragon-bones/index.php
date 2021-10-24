@@ -259,7 +259,7 @@ function newVideo(videoArray) {
         }, duration * 1000);
     } else {
         // redirect the page
-        window.location.href = 'https://waawgallery.com/';
+        window.location.href = '/augur-and-dragon-bones/info.php';
     }
 }
 

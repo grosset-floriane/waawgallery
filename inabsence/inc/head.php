@@ -9,7 +9,7 @@ if (!defined('MAGIC')) { // quotes importantes
 }
 
 include('../inc/functions.php');
-include('inc/functions.php');
+// include('inc/functions.php');
 $ua = getBrowser();
 $browser = $ua['name'];
 

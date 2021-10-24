@@ -9,14 +9,14 @@
         include 'inc/head.php';
     ?>
 
-    <title>Inabsence - Emilie Wright / WAAW Gallery</title>
+    <title>inabsence // Emilie Wright</title>
 </head>
 <body class="info">
     <?php include '../inc/header.php'; ?>
 
     <main>
         <h1><a href="https://waawgallery.com"><img src="../img/logoWhite.png" alt="Logo WAAW gallery" class="logo"></a></h1>
-        <h2>Inabsence // Emilie Wright</h2>
+        <h2>inabsence // Emilie Wright</h2>
         <p>Opening 7th February at 7pm online on WAAW / offline at <a href="http://zipcollective.com" target="_BLANK">.ZIP Collective</a><br>
         8th-9th February 13.00-18.00: Reading & Writing sessions at <a href="http://zipcollective.com" target="_BLANK">.ZIP Collective</a></p>
         <p><a href="https://www.facebook.com/events/1076063106064087/" target="_BLANK">Facebook event</a></p>

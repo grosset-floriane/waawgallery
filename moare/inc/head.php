@@ -8,7 +8,7 @@ if (!defined('MAGIC')) { // quotes importantes
     die;
 }
 
-include('functions.php');
+// include('../../inc/functions.php');
 if ( function_exists('getBrowser' ) ) {
     $ua = getBrowser();
     $browser = $ua['name'];
