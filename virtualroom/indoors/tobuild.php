@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     
-    <title>Indoors</title>
+    <title>To Build // Indoors</title>
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
     <script src="../assets/js/menu.js"></script> -->
     <?php 
@@ -28,7 +28,7 @@
     <!-- Styles  -->
     <link rel="stylesheet" type="text/css" media="screen" href="/virtualroom/indoors/assets/css/style.min.css" />
     <?php 
-    if ($browser == 'Google Chrome') {
+    if ( isset($browser) && $browser == 'Google Chrome') {
         echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/assets/css/chrome.css\" />";
     }
     ?>

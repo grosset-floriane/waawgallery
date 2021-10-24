@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     
-    <title>Indoors</title>
+    <title>Disconnected // Indoors</title>
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
     <script src="../assets/js/menu.js"></script> -->
     <?php 
@@ -34,7 +34,7 @@
     <!-- Styles  -->
     <link rel="stylesheet" type="text/css" media="screen" href="/virtualroom/indoors/assets/css/style.min.css" />
     <?php 
-    if ($browser == 'Google Chrome') {
+    if ( isset($browser) && $browser == 'Google Chrome') {
         echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/assets/css/chrome.css\" />";
     }
     ?>
@@ -75,8 +75,12 @@
         </section>
 
         <section class="diconnected-section" id="letterlola">
-            <a href="assets/img/letterlola/letterlola1.png" title="Click to open the image in a new tab" target="_BLANK"><img src="assets/img/letterlola/letterlola1.png" alt="Letter from Lola to Floriane first part" /></a>
-            <a href="assets/img/letterlola/letterlola2.png" title="Click to open the image in a new tab" target="_BLANK"><img src="assets/img/letterlola/letterlola2.png" alt="Letter from Lola to Floriane second part" /></a>
+            <a href="assets/img/letterlola/letterlola1.png" title="Click to open the image in a new tab" target="_BLANK">
+                <img src="assets/img/letterlola/letterlola1.png" alt="Letter from Lola to Floriane first part" />
+            </a>
+            <a href="assets/img/letterlola/letterlola2.png" title="Click to open the image in a new tab" target="_BLANK">
+                <img src="assets/img/letterlola/letterlola2.png" alt="Letter from Lola to Floriane second part" />
+            </a>
             <p><a href="lolaletter.php">See the digital text of Lola's letter</a></p>
         </section>
 
