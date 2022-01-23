@@ -1,4 +1,19 @@
 .logo {
-    width: 150px;
+    width: 15rem;
     position: relative;
+
+    svg {
+        width: 15rem;
+        height: 7rem;
+    }
+
+    path {
+        fill: $yellow;
+    }
+
+    &:hover {
+        path {
+            fill: $red;
+        }
+    }
 }

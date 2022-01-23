@@ -1,0 +1,19 @@
+a {
+    color: $color-red;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-red;
+        text-decoration: none;
+    }
+
+    
+}
+
+a, button {
+    &:focus-visible {
+        outline: $thick-border;
+        outline-offset: .7rem;
+    }
+}

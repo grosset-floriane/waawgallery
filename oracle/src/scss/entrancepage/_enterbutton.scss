@@ -1,16 +1,15 @@
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 4.8rem;
 }
 .enter-button {
     width: 200px;
     margin: auto;
-    margin-top: 2em;
-    padding: 10px;
+    margin-top: 4.8rem;
     text-align: center;
     text-transform: uppercase;
-    border: dashed $green 2px;
+    border: dashed $green .2rem;
     animation-name: blink;
     animation-iteration-count: infinite;
     animation-duration: 2.5s;
@@ -19,7 +18,11 @@
     a {
         text-decoration: none;
         color: inherit;
-
+        display: block;
+        padding: 1rem;
+        &:focus-visible {
+            outline-offset: .6rem;
+        }
     }
 }
 

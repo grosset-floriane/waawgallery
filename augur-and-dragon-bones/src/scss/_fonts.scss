@@ -1,13 +1,7 @@
 @font-face {
-    font-family: 'West England';
-    src: url(../fonts/west_england.woff);
-  }
-
-
-@font-face {
     font-family:'Constantia';
-    src: url('../fonts/Constantia.eot');
-	  src: url('../fonts/Constantia.eot?#iefix') format('embedded-opentype'),
+    src: local('Constantia');
+	  src: url('../fonts/Constantia.eot'), url('../fonts/Constantia.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Constantia.woff2') format('woff2'),
 		url('../fonts/Constantia.woff') format('woff'),
 		url('../fonts/Constantia.svg#Constantia') format('svg');

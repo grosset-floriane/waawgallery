@@ -1,0 +1,99 @@
+#buttonMenu {
+    // font-style
+    font-family: 'Raleway';
+    font-size: $font-size-large;
+    font-weight: bolder;
+    color: $color-black;
+    // block styles
+    padding: .4rem 0;
+    margin-bottom: 0;
+
+    // positions
+    position: relative;
+    top: -1.1rem;
+
+    // animation
+    transition: $transition-duration $transition-effect color;
+
+    //toggled button
+    &.toggled {
+        left: 0;
+        transition: $transition-duration $transition-effect color;
+    }
+
+
+
+    // icon Info
+    #info-icon {
+        width: 2.4rem;
+        position: relative;
+        top: .3rem;
+        left: 5.3rem;
+
+        path {
+            fill: $color-black;
+            transition: $transition-duration $transition-effect color;
+            transition: $transition-duration $transition-effect fill;
+        }
+        
+    }
+
+
+    // toggled -> info-icon
+    &.toggled {
+        #info-icon {
+            left:0;
+            transition: $transition-effect $transition-duration left;
+
+            path {
+                transition: $transition-duration $transition-effect fill;
+            }
+        }
+    }
+
+
+    // letters logo
+    .logoletters {
+        &.firstW {
+            left: 4.4rem;
+            color: transparent;
+        }
+    
+        &.rotatedW {
+            line-height: 1;
+            padding-top: 2px;
+            top: -.1rem;
+            left: 2.9rem;
+        }
+    
+        &.lastW {
+            left: 0;
+        }
+    }
+
+    
+    // toggled -> letters of the logo
+    &.toggled {
+        .firstW {
+            color: $color-black;
+            left: 0;
+            transition: $transition-effect $transition-duration left,
+                        $transition-effect $transition-duration color;
+        }
+
+        .rotatedW {
+            line-height: 1;
+            padding-top: 2px;
+            top: .2rem;
+            left: .1rem;
+            transition: $transition-effect $transition-duration left;
+        }
+
+        .lastW {
+            left: -.2rem;
+            transition: $transition-effect $transition-duration left;
+        }
+    }
+
+
+}

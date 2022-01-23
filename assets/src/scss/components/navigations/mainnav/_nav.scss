@@ -1,0 +1,10 @@
+#waaw-header nav {
+    display: none;
+    &.open {
+        display: block;
+        overflow-y: auto;
+        height: calc(100vh - 70px);
+    }
+}
+
+

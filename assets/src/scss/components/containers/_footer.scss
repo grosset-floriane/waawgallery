@@ -1,0 +1,9 @@
+footer {
+    @extend main ;
+    margin-top: 0 !important;
+
+    p {
+        font-size: $font-size-smallest;
+    }
+    
+}

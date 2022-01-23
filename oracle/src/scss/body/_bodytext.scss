@@ -1,13 +1,13 @@
 p {
-    line-height: 1.5em;
-    margin: 1em 0;
+    line-height: 3rem;
+    margin: 2.4rem 0;
     text-align: justify;
 
     &.credits {
-        font-size: 1.5em;
-        margin: 2em 0;
+        font-size: 2.4rem;
+        margin: 4.8rem 0;
         color: $turquoise;
-        line-height: 30px;
+        line-height: 3rem;
     }
 
     &.message {

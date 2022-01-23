@@ -1,3 +1,7 @@
+:root {
+    font-size: 62.5%;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,12 +12,13 @@ body {
     font-family: $font-body;
     margin: 0;
     scroll-behavior: smooth;
+     background-color: black;
 
     &.index {
        
         background-position: top left;
         background-size: auto;
-        background-color: black;
+       
 
         main {
             width: 100vw;
@@ -26,19 +31,12 @@ body {
             padding: 0;
         }
     }
-
-    &.info {
-        background-color: black;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
 }
 
-h3 {
-    margin-top: 2em;
-}
 
 
 
@@ -59,7 +57,7 @@ button {
 }
 
 hr {
-    border: 1px solid $beige;
+    border: .1rem solid $beige;
     border-bottom: none;
-    margin: 3em 0;
+    margin: 3rem 0;
 }

@@ -1,0 +1,10 @@
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    touch-action: manipulation;
+
+    &:focus-visible {
+        @extend a:focus-visible
+    }
+}

@@ -3,36 +3,38 @@ nav#touch-navigation {
     position: absolute;
     bottom: 0;
     background-color: rgba(128, 128, 128, 0.602);
-    border-radius: 3px;
-    border: 1px grey solid;
+    border-radius: .3rem;
+    border: .1rem grey solid;
     border-left: none;
-    left: -356px;
-    bottom: 10px;
+    left: -35.6rem;
+    bottom: 1rem;
     transition: ease .5s left;
-    height: 77px;
+    height: 7.7rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    padding-bottom: 0;
+    overflow-y: hidden;
 
     &:hover {
-        left: -345px;
+        left: -34.5rem;
         transition: ease .5s left;
     }
 
     &.open {
-        left: -13px;
+        left: -1.3rem;
         
 
         &:hover {
-            left: -13px;
+            left: -1.3rem;
         }
         
     }
 
     ul {
         display: flex;
-        max-width: 450px;
-        margin: 10px;
+        max-width: 45rem;
+        margin: 1rem;
 
         
     

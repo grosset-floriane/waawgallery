@@ -2,26 +2,28 @@
     position: absolute;
     background-color: black;
     width: 30%;
-    min-width: 300px;
-    max-width: 500px;
+    min-width: 30rem;
+    max-width: 50rem;
     z-index: 999;
-    top: 1em;
-    left: 1em;
-    padding: 10px;
+    top: 1.6rem;
+    left: 1.6rem;
+    padding: 1.4rem;
     cursor: pointer;
     max-height: 100vh;
     overflow-y: auto;
     
 
     h2 {
-        margin: 1em 0;
-        font-size: 2em;
+        margin: 3.3rem 0;
+        font-size: 3.3rem;
         cursor: pointer;
     }
 
     p {
         color: $red;
         cursor: pointer;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
         span {
             color: $yellow;
         }

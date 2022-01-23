@@ -4,28 +4,28 @@ nav#touch-navigation {
         font-weight: bold;
         color: black;
         // padding: 10px;
-        border: 2px solid black;
+        border: .2rem solid black;
         cursor: pointer;
-        width: 55px;
-        height: 55px;
+        width: 5.5rem;
+        height: 5.5rem;
         font-family: 'VT323', monospace;
         font-size: 1.5em;
-        margin-left: 10px;
+        margin-left: 1rem;
 
         &:focus {
-            border: 2px solid black;
+            border: .2rem solid black;
             background-color: #a3a3a3;
         }
         &:active {
             background-color: black;
             color: white;
             outline: none;
-            border: 2px solid black;
+            border: .2rem solid black;
         }
 
         &#button-background {
             border-radius: 50%;
-            margin-left: .2em;
+            margin-left: .8rem;
 
         }
 
@@ -37,8 +37,8 @@ nav#touch-navigation {
             content: attr(alt);
             position: absolute;
             font-family: 'VT323', monospace;
-            font-size: .4em;
-            padding: 4px;
+            font-size: 1.5rem;
+            padding: .4rem;
             color: transparent;
             animation-name: titleInformationAppartion;
             animation-duration: 3s;
@@ -53,13 +53,13 @@ nav#touch-navigation {
               background-color: transparent;
               color: transparent;
               border: none;
-              border-right: solid 3px $red;
-              border-bottom: solid 3px $red;
+              border-right: solid .3rem $red;
+              border-bottom: solid .3rem $red;
               transition: $transition-duration $transition-effect border-color;
-              width: 10px;
-              height: 10px;
+              width: 1rem;
+              height: 1rem;
               transform: rotate(-45deg);
-              margin: 34px 7px 34px 14px;
+              margin: 3.4rem .7rem 3.4rem 1.4rem;
               transition: ease 1s transform;
 
               &:hover:after {
@@ -85,10 +85,10 @@ nav#touch-navigation {
           #button-arrow {
               display: block;
               background-color: $yellow;
-              width: 5px;
-              height: 5px;
-              border-right: 2px black solid;
-              border-bottom: 2px black solid;
+              width: .5rem;
+              height: .5rem;
+              border-right: .2rem black solid;
+              border-bottom: .2rem black solid;
 
               
           }

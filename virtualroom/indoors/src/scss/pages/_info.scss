@@ -1,0 +1,35 @@
+body.info {
+    main {
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #393939c7;
+        margin-top: 9rem;
+    }
+
+    hr {
+        border-color: $beige;
+        border-style: solid;
+        border-width: .1rem;
+    }
+
+    p {
+        color: $blue;
+    }
+     ul[role="nav"] {
+         a {
+             padding: .7rem 0;
+             display: block;
+
+             @include desktop {
+                padding: .5rem 0;
+             }
+         }
+     }
+
+    
+
+    footer {
+        background-color: #393939c7;
+    }
+}

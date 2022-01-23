@@ -1,3 +1,7 @@
+:root {
+    font-size: 62.5%;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,9 +9,10 @@
 }
 
 body {
-    font-family: $font-body;
+    font-family: $font-soren;
     margin: 0;
     scroll-behavior: smooth;
+    font-size: 2rem;
 
     &.index {
         background-image: url('../img/726/main_screen_01_726.png');
@@ -44,9 +49,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
 }
 
-h3 {
-    margin-top: 2em;
-}
 
 
 
@@ -67,7 +69,7 @@ button {
 }
 
 hr {
-    border: 2px solid $yellow;
+    border: .2rem solid $yellow;
     border-bottom: none;
-    margin: 3em 0;
+    margin: 6rem 0;
 }

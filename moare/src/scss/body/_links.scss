@@ -7,3 +7,10 @@ a {
         color: $red;
     }
 }
+
+a, button {
+    &:focus-visible {
+        outline: $red .2rem solid;
+        outline-offset: .4rem;
+    }
+}

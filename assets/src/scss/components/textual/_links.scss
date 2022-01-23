@@ -1,0 +1,8 @@
+a {
+    touch-action: manipulation;
+
+    &:focus-visible {
+        outline: .1rem black solid;
+        outline-offset: .2rem;
+    }
+}

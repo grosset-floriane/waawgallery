@@ -1,0 +1,11 @@
+.logo {
+    a:hover {
+        svg {
+            background-color: $color-red;
+            path {
+                fill: $color-white;
+            }
+        }  
+    }
+    
+}

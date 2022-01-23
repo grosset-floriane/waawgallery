@@ -1,0 +1,38 @@
+// Colors 
+$color-black: black;
+$color-white: white;
+
+// Typography
+$font-title: "Raleway", sans-serif;
+$font-body: "Roboto", sans-serif;
+
+// font-sizes
+// Font Size
+$font-size-biggest: 5rem;
+$font-size-largest: 3rem;
+$font-size-large: 2.2rem;;
+$font-size-base: 1.7rem;
+$font-size-small: 1.5rem;
+$font-size-smallest: 1.4rem;
+
+// Spacing
+$spacing-small: .75rem;
+$spacing-single: 1rem;
+$spacing-double: 2rem;
+$spacing-triple: 3rem;
+$spacing-quadriple: 4rem;
+$spacing-large: 8rem;
+$spacing-big: 10rem;
+
+$spacing-mobile: 1.5rem;
+$spacing-tablet: 2.5rem;
+
+// Animation
+$transition-duration: 1s;
+$transition-effect: ease;
+
+// Media queries
+$tiny-phone: 355px;
+$tablet: 651px;
+$desktop: 1025px;
+$large-desktop: 1600px;

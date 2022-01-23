@@ -1,0 +1,7 @@
+p {
+    font-size: $font-size-base;
+    line-height: calc(#{$font-size-base} + #{$spacing-small});
+    font-family: $font-body;
+    text-align: justify;
+    margin: $spacing-double 0;
+}

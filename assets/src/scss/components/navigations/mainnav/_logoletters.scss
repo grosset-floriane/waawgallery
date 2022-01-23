@@ -1,0 +1,14 @@
+.logoletters {
+    position: relative;
+    display: inline-block;
+
+    &.firstW {
+        letter-spacing: -.1rem;
+    }
+
+    &.rotatedW {
+        transform: rotate(180deg);
+        letter-spacing: -.2rem;
+    }
+}
+

@@ -1,5 +1,11 @@
 <?php
     define('MAGIC', "WAAWamazing");
+    require  "../classes/InfoPage.php";
+
+    $newPage = new InfoPage("/oracle/", $conn);
+    $head = $newPage->getHead($newPage->pageData);
+    $header = $newPage->getHeader($newPage->pageData);
+
 ?>
 
 <!DOCTYPE html>
@@ -7,13 +13,10 @@
 <head>
     
     <title>Bibliomancy Oracle / Credits</title>
-    <!-- <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
-    <script src="../assets/js/menu.js"></script> -->
-    <?php include 'inc/head.php';?>
+    <?php echo $head; ?>
 </head>
 <body class="credits">
-<?php include '../inc/header.php'; ?>
+<?php echo $header;?>
     
 
     <main>

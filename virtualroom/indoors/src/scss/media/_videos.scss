@@ -4,10 +4,16 @@
     .video {
         width:  50%;
         position: relative;
-        padding-bottom: 56.25%;
         padding-top: 25px;
         height: 0;
-        width: 70%;
+        width: 100%;
+        padding-bottom: 83.25%;
+        
+        @include desktop {
+            width: 70%;
+            padding-bottom: 56.25%;
+        }
+        
 
         iframe {
             width: 100%;
@@ -30,7 +36,11 @@
 
         &#lola.wokeup {
             margin: auto;
-            margin-top: 10em;
+            margin-top: 7rem;
+            @include desktop {
+                margin-top: 18rem;
+            }
+            
         }
 
         &#lola.daydream {

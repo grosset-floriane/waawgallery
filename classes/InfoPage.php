@@ -1,6 +1,6 @@
 <?php 
-require_once 'DatabaseConnect.php';
-require_once 'Page.php';
+require_once __DIR__ . '/DatabaseConnect.php';
+require_once __DIR__ . '/Page.php';
 
 function url(){
     return sprintf(
@@ -19,10 +19,10 @@ class InfoPage extends Page
     public $pageData;
     private $connection;
 
-    public function __construct($id, $conn) {
+    public function __construct($folderName, $conn) {
         $this->connection = $conn;
         $query = "SELECT * FROM pages_infos
-                    WHERE id = $id";
+                    WHERE artwork_folder LIKE '$folderName'";
 
         $result = $this->connection->sendQuery($query);
         if($result->num_rows < 1) {
@@ -39,15 +39,71 @@ class InfoPage extends Page
         $this->pageData = $data[0];
     }
 
+    public function getInfoContent($pageData) {
+
+        $logo = $this->getLogo();
+
+        $artworkTitle = $pageData['title'];
+
+        $facebookEventUrl = $pageData['facebook_event'];
+        $facebookEventLine = "<p><a href=\"$facebookEventUrl\" target=\"_BLANK\">Facebook event</a></p>";
+
+        $eventDate = $pageData['event_date'];
+        $eventDateLine = "<p>$eventDate</p>";
+
+        $artworkDescription = $pageData['description'];
+        $artistBio = $pageData['artist_bio'];
+
+        $enterWorkLinks = $pageData['enter_links'];
+
+        return "
+        <main id=\"main\">
+            <h1 class=\"logo\"><a href=\"/\">$logo</a></h1>
+            <h2>$artworkTitle</h2>
+            $eventDateLine
+            $facebookEventLine
+            <hr>
+                <section class=\"artwork-intro\">
+                    $artworkDescription
+                </section>
+            <hr>
+                <section class=\"artist-bio\">
+                    $artistBio
+                </section>
+
+                $enterWorkLinks
+
+        </main>
+        ";
+    }
+
     public function buildInfoPage() {
         $head = $this->getHead($this->pageData);
-        // $header = $this->getHeader($this->pageData, $this->connection);
+        $skipLink = $this->getSkipLinkToContent();
+        $header = $this->getHeader($this->pageData, $this->connection);
+        $content = $this->getInfoContent($this->pageData);
+        $footer = $this->getFooter();
+
+        // var_dump($this->pageData);
+
+        echo "
+
+<!DOCTYPE html>
+<html lang=\"en\">
+        <head>
+        $head
+        </head>
+        $skipLink
+        <body class=\"info\">
+            $header
+            $content
+            $footer
+
+        ";
 
     }
+
+    
 }
-
-
-$newPage = new InfoPage(5, $conn);
-$newPage->buildInfoPage();
 
 ?>

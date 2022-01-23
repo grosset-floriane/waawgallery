@@ -1,23 +1,32 @@
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 4rem;
 }
 .enter-button {
-    width: 200px;
+    width: 20rem;
     margin: auto;
-    margin-top: 2em;
-    padding: 20px;
+    margin-top: 4rem;
+    
     text-align: center;
     text-transform: uppercase;
-    border: solid $yellow 2px;
-    font-size: 1.1em;
+    border: solid $yellow .2rem;
+    font-size: 2.2rem;
     
+    &:hover {
+        border-color: $red;
+    }
     
 
     a {
         text-decoration: none;
         color: inherit;
+        padding: 2rem;
+        display: block;
+
+        &:hover {
+            color: $red;
+        }
 
     }
 }

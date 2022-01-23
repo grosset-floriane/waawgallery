@@ -1,6 +1,10 @@
 <?php
-    define('MAGIC', "WAAWamazing");
-    
+define('MAGIC', "WAAWamazing");
+require  "../../classes/InfoPage.php";
+
+$newPage = new InfoPage("/virtualroom/indoors/", $conn);
+$head = $newPage->getHead($newPage->pageData);
+$header = $newPage->getHeader($newPage->pageData);
 ?>
 
 
@@ -9,57 +13,22 @@
 <head>
     
     <title>Disconnected // Indoors</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
-    <script src="../assets/js/menu.js"></script> -->
-    <?php 
-//     include('/inc/functions.php');
-// $ua = getBrowser();
-// $browser = $ua['name'];
+    <?php echo $head; ?>
 
-
-?>
-
-<!-- Fotorama -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Fotorama -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script type="text/javascript" src="/js/vendors/jquery/jquery.js"></script>
-    <!-- Mandatory -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-
-    <!-- Styles  -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/virtualroom/indoors/assets/css/style.min.css" />
-    <?php 
-    if ( isset($browser) && $browser == 'Google Chrome') {
-        echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/assets/css/chrome.css\" />";
-    }
-    ?>
+    
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 
-    <!-- FavIcon -->
-    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+</head>
+<body class="disconnected">
 
-    
-    <!-- Scripts -->
-    <script src="/waawgallery/assets/js/menu.js"></script>
-
-    
-
-    <!-- Tracker Clicky (Analytics) -->
-    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101235170);</script>
-    <script async src="//static.getclicky.com/js"></script>
-    </head>
-<body class="part4">
-<?php include '../../inc/header.php'; ?>
+    <?php echo $header;?>
 
    
     <main>
@@ -81,7 +50,7 @@
             <a href="assets/img/letterlola/letterlola2.png" title="Click to open the image in a new tab" target="_BLANK">
                 <img src="assets/img/letterlola/letterlola2.png" alt="Letter from Lola to Floriane second part" />
             </a>
-            <p><a href="lolaletter.php">See the digital text of Lola's letter</a></p>
+            <p><a href="lolaletter.php">Read the digital text of Lola's letter</a></p>
         </section>
 
         
@@ -120,7 +89,7 @@
             <div class="letterflo">
             <a href="assets/img/letterflo/letterflo1.jpg" title="Click to open the image in a new tab" target="_BLANK"><img src="assets/img/letterflo/letterflo1.jpg" /></a>
             <a href="assets/img/letterflo/letterflo2.jpg" title="Click to open the image in a new tab" target="_BLANK"><img src="assets/img/letterflo/letterflo2.jpg" /></a>
-            <p><a href="floletter.php">See the digital text of Floriane's letter</a></p>
+            <p><a href="floletter.php">Read the digital text of Floriane's letter</a></p>
             </div>
         </section>
 

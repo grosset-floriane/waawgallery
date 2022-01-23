@@ -1,5 +1,5 @@
 <?php 
-require_once '../../private/AccessData.php';
+require_once __DIR__ . '/../../private/AccessData.php';
 
 class DatabaseConnect extends AccessData 
 {

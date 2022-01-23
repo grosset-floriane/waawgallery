@@ -1,15 +1,16 @@
 .enter-button {
-    width: 125px;
+    width: 12.5rem;
     margin: auto;
-    margin-top: 2em;
-    padding: 10px;
-    border: 1px solid
-    white;
+    margin-top: 4.5rem;
+    
+    border: .1rem solid white;
     text-align: center;
     text-transform: uppercase;
 
     a {
         text-decoration: none;
+        padding: 1rem;
+        display: block;
     }
 }
 

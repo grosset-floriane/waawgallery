@@ -1,4 +1,11 @@
 .logo {
-    width: 150px;
+    width: 15rem;
     position: relative;
+    svg {
+        height: 7rem;
+        width: 16rem;
+    }
+    path {
+        fill: $white;
+    }
 }

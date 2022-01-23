@@ -1,27 +1,27 @@
 @keyframes blink {
     0% {
         color: $green;
-        border: dashed $green 2px;   
+        border: dashed $green .2rem;   
 
     }
     25% {
         color: $yellow;
-        border: dashed $yellow 2px;
+        border: dashed $yellow .2rem;
     }
 
     50% {
         color: $purple;
-        border: dashed $purple 2px;
+        border: dashed $purple .2rem;
     }
 
     75% {
         color: $turquoise;
-        border: dashed $turquoise 2px;
+        border: dashed $turquoise .2rem;
     }
 
     100% {
         color: magenta;
-        border: dashed magenta 2px;
+        border: dashed magenta .2rem;
     }
 
 

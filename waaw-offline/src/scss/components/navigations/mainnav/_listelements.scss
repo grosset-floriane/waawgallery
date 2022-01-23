@@ -1,0 +1,24 @@
+#waaw-header nav {
+    li {
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+
+        .menu-title {
+            color: $color-white;
+            background-color: $color-blue;
+        }
+
+        a {
+            text-decoration: none; 
+            
+            &:focus-visible {
+                outline: none;
+                color: $color-white;
+                background-color: $color-red;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+

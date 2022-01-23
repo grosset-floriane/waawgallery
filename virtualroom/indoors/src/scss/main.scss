@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'mixins';
-@import 'animations';
 
 @import 'reset';
 
@@ -8,19 +7,17 @@
 
 @import 'body/links';
 @import 'body/main';
-@import 'body/blockquotes';
 @import 'body/bodytext';
-@import 'body/sections';
 
-@import 'body/form/form';
-@import 'body/form/button';
 
-@import 'menu/logoletters';
+
+
 
 // Menu styles
 @import 'menu/header';
 @import 'menu/button';
 @import 'menu/nav';
+@import 'menu/logoletters';
 
 // Logos
 @import 'logos/waawlogo';
@@ -34,25 +31,16 @@
 // Footer
 @import 'footer/footer';
 
-// Etrance Page 
-@import 'entrancepage/enterbutton';
+// pages
+@import 'pages/info';
+@import 'pages/daydream';
+@import 'pages/today';
+@import 'pages/disconnected';
+@import 'pages/afterworld';
 
-// About page
-@import 'logos/sponsors';
-@import 'about/newsletterform';
-@import 'about/nav';
-@import 'about/abstract';
 
-// Opening page 
-@import 'openingroom/main';
-@import 'openingroom/form';
-@import 'openingroom/headings';
-@import 'openingroom/welcomemessage';
-@import 'openingroom/textmessage';
-@import 'openingroom/scrollbar';
-@import 'openingroom/alert';
-@import 'openingroom/loader';
-@import 'openingroom/noscript';
+
+
 
 
 

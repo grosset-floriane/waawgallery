@@ -3,12 +3,12 @@
     display: inline-block;
 
     &.firstW {
-        letter-spacing: -1px;
+        letter-spacing: -.1rem;
     }
 
     &.rotatedW {
         transform: rotate(180deg);
-        letter-spacing: -2px;
+        letter-spacing: -.2rem;
     }
 
     
@@ -16,6 +16,6 @@
 }
 
 nav a > span.rotatedW.logoletters {
-    top: 0px;
+    top: 0;
 }
 

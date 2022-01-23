@@ -4,21 +4,38 @@ nav {
 
     &.open {
         display: block;
-        
+        max-height: calc(100vh - 10rem - 2.5rem - 4rem);
+        overflow-y: auto;
     }
 
 
     li {
-        line-height: 45px;
+        // line-height: 4.5rem;
         text-align: left;
-        font-size: 25px;
+        font-size: 2.5rem;
         color: $blue;
         font-weight: bold;
-        list-style: url('../img/puce1.png');
-        margin-left: 10px;
+        
+        margin-left: 1rem;
 
         a {
             color: $blue;
+            display: block;
+            padding: 1.3rem;
+            &:focus-visible {
+                outline-offset: -.5rem;
+        }
+        }
+
+        .menu-title {
+            background-color: $purple;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        li {
+            list-style: url('../img/puce1.png');
+            margin-left: 3rem;
         }
     }
 
@@ -26,16 +43,16 @@ nav {
 
     .logoletters {
         &.firstW {
-            left: 5px;
+            left: .5rem;
         }
 
         &.rotatedW {
-            top: 1px;
-            left: 2px;
+            top: .1rem;
+            left: .2rem;
         }
     
         &.lastW {
-            left: -4px;
+            left: -.4rem;
         }
     }
 }

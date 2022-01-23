@@ -1,0 +1,619 @@
+@font-face {
+  font-family: 'West England';
+  src: url(../fonts/west_england.woff);
+}
+
+@keyframes titleInformationAppartion {
+  0% {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: transparent;
+  }
+  30% {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  }
+  70% {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  }
+  100% {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: transparent;
+  }
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "West England", monospace;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: 2rem;
+}
+
+body.index {
+  background-image: url("../img/726/main_screen_01_726.png");
+  background-position: top left;
+  background-size: auto;
+  background-color: #fff200;
+}
+
+@media (min-width: 727px) {
+  body.index {
+    background-image: url("../img/968/main_screen_01_968.png");
+  }
+}
+
+@media (min-width: 969px) {
+  body.index {
+    background-image: url("../img/1210/main_screen_01_1210.png");
+  }
+}
+
+@media (min-width: 1210px) {
+  body.index {
+    background-image: url("../img/1452/main_screen_01_1452.png");
+  }
+}
+
+@media (min-width: 1453px) {
+  body.index {
+    background-image: url("../img/1815/main_screen_01_1815.png");
+  }
+}
+
+@media (min-width: 1816px) {
+  body.index {
+    background-image: url("../img/2420/main_screen_01_2420.png");
+  }
+}
+
+@media (min-width: 2421px) {
+  body.index {
+    background-image: url("../img/3025/main_screen_01_3025.png");
+  }
+}
+
+body.index main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+body.info {
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+hr {
+  border: 0.2rem solid #fff200;
+  border-bottom: none;
+  margin: 6rem 0;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: #ff0000 0.2rem solid;
+  outline-offset: .4rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 5rem;
+  font-family: "West England", monospace;
+  color: #ff0000;
+  margin-bottom: 8rem;
+  font-size: 5rem;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  main {
+    width: 80rem;
+    margin: auto;
+    padding-top: 0;
+  }
+}
+
+main h1 {
+  margin-bottom: 8rem;
+}
+
+body.index main {
+  padding-bottom: 8rem;
+}
+
+body.info {
+  background-color: black;
+}
+
+body.info main {
+  margin-top: 10rem;
+}
+
+p {
+  line-height: 3rem;
+  margin: 2rem 0;
+  text-align: justify;
+  font-family: "West England", monospace;
+  color: #fff200;
+}
+
+.artwork-intro p {
+  color: #ff0000;
+}
+
+.artwork-intro p:hover {
+  color: #fff200;
+}
+
+.artist-bio p {
+  color: #0000ff;
+}
+
+.artist-bio p:hover {
+  color: #fff200;
+}
+
+.logoletters {
+  position: relative;
+  display: inline-block;
+}
+
+.logoletters.firstW {
+  letter-spacing: -.1rem;
+}
+
+.logoletters.rotatedW {
+  transform: rotate(180deg);
+  letter-spacing: -.2rem;
+}
+
+nav a > span.rotatedW.logoletters {
+  top: -.3rem;
+}
+
+body header#waaw-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+  z-index: 99999;
+}
+
+body header:not(#waaw-header) {
+  margin-top: 4rem;
+}
+
+body header#waaw-header.open {
+  z-index: 99999;
+  min-width: 100%;
+  background-color: black;
+  height: 100vh;
+}
+
+button#buttonMenu {
+  font-family: "Raleway", sans-serif;
+  color: #ff0000;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  padding: .4rem 0 .4rem;
+  margin-bottom: 0;
+  position: relative;
+  top: -1.1rem;
+  transition: 1s ease color;
+}
+
+button#buttonMenu.toggled {
+  left: 0;
+  color: #fff200;
+  transition: 1s ease color;
+}
+
+button#buttonMenu #info-icon {
+  width: 2.4rem;
+  position: relative;
+  top: .3rem;
+  left: 5.3rem;
+}
+
+button#buttonMenu #info-icon path {
+  fill: #ff0000;
+  transition: 1s ease color;
+  transition: 1s ease fill;
+}
+
+button#buttonMenu.toggled #info-icon {
+  left: 0;
+  transition: ease 1s left;
+}
+
+button#buttonMenu.toggled #info-icon path {
+  fill: #fff200;
+  transition: 1s ease fill;
+}
+
+button#buttonMenu .logoletters.firstW {
+  left: 4.4rem;
+  color: transparent;
+}
+
+button#buttonMenu .logoletters.rotatedW {
+  top: -.2rem;
+  left: 3rem;
+}
+
+button#buttonMenu .logoletters.lastW {
+  left: 0;
+}
+
+button#buttonMenu.toggled .firstW {
+  left: 0;
+  color: #fff200;
+  transition: ease 1s left, ease 1s color;
+}
+
+button#buttonMenu.toggled .rotatedW {
+  top: .1rem;
+  left: .1rem;
+  transition: ease 1s left;
+}
+
+button#buttonMenu.toggled .lastW {
+  left: -.2rem;
+  transition: ease 1s left;
+}
+
+body.info button#buttonMenu.toggled, body.credits button#buttonMenu.toggled, body.about button#buttonMenu.toggled {
+  color: #fff200;
+}
+
+body.info button#buttonMenu.toggled .firstW, body.credits button#buttonMenu.toggled .firstW, body.about button#buttonMenu.toggled .firstW {
+  color: #fff200;
+}
+
+body.info button#buttonMenu.toggled #info-icon path, body.credits button#buttonMenu.toggled #info-icon path, body.about button#buttonMenu.toggled #info-icon path {
+  fill: #fff200;
+}
+
+nav {
+  display: none;
+  font-family: 'West England', monospace;
+}
+
+nav.open {
+  display: block;
+  height: calc(100vh - 2.5rem - 3rem);
+  overflow-y: auto;
+  padding-bottom: 3rem;
+}
+
+nav li {
+  line-height: 4.5rem;
+  text-align: left;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 1rem;
+  color: #fff200;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #ff0000;
+}
+
+nav li > ul > li {
+  margin-left: 2.5rem;
+}
+
+nav .logoletters.firstW {
+  left: .5rem;
+}
+
+nav .logoletters.rotatedW {
+  top: .1rem;
+  left: .2rem;
+}
+
+nav .logoletters.lastW {
+  left: -.4rem;
+}
+
+body.info header#waaw-header.open li, body.credits header#waaw-header.open li, body.about header#waaw-header.open li {
+  color: #fff200;
+}
+
+body.info header#waaw-header.open li a, body.credits header#waaw-header.open li a, body.about header#waaw-header.open li a {
+  color: #ff0000;
+}
+
+nav#touch-navigation {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.602);
+  border-radius: .3rem;
+  border: .1rem grey solid;
+  border-left: none;
+  left: -35.6rem;
+  bottom: 1rem;
+  transition: ease .5s left;
+  height: 7.7rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  padding-bottom: 0;
+  overflow-y: hidden;
+}
+
+nav#touch-navigation:hover {
+  left: -34.5rem;
+  transition: ease .5s left;
+}
+
+nav#touch-navigation.open {
+  left: -1.3rem;
+}
+
+nav#touch-navigation.open:hover {
+  left: -1.3rem;
+}
+
+nav#touch-navigation ul {
+  display: flex;
+  max-width: 45rem;
+  margin: 1rem;
+}
+
+nav#touch-navigation ul li {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav#touch-navigation button {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  border: .2rem solid black;
+  cursor: pointer;
+  width: 5.5rem;
+  height: 5.5rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+  margin-left: 1rem;
+}
+
+nav#touch-navigation button:focus {
+  border: .2rem solid black;
+  background-color: #a3a3a3;
+}
+
+nav#touch-navigation button:active {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: .2rem solid black;
+}
+
+nav#touch-navigation button#button-background {
+  border-radius: 50%;
+  margin-left: .8rem;
+}
+
+nav#touch-navigation button:hover:after {
+  content: attr(alt);
+  position: absolute;
+  font-family: 'VT323', monospace;
+  font-size: 1.5rem;
+  padding: .4rem;
+  color: transparent;
+  animation-name: titleInformationAppartion;
+  animation-duration: 3s;
+  pointer-events: none;
+  width: max-content;
+}
+
+nav#touch-navigation button#button-menu {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  border-right: solid 0.3rem #ff0000;
+  border-bottom: solid 0.3rem #ff0000;
+  transition: 1s ease border-color;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(-45deg);
+  margin: 3.4rem .7rem 3.4rem 1.4rem;
+  transition: ease 1s transform;
+}
+
+nav#touch-navigation button#button-menu:hover:after {
+  content: attr(alt);
+  transform: rotate(45deg);
+}
+
+nav#touch-navigation button#button-menu.open {
+  transform: rotate(-225deg) !important;
+  transition: ease 1s transform;
+}
+
+nav#touch-navigation button#button-menu.open:hover:after {
+  content: attr(alt);
+  transform: rotate(225deg);
+}
+
+nav#touch-navigation button #button-arrow {
+  display: block;
+  background-color: #fff200;
+  width: .5rem;
+  height: .5rem;
+  border-right: .2rem black solid;
+  border-bottom: .2rem black solid;
+}
+
+.logo {
+  width: 15rem;
+  position: relative;
+}
+
+.logo svg {
+  width: 15rem;
+  height: 7rem;
+}
+
+.logo path {
+  fill: #fff200;
+}
+
+.logo:hover path {
+  fill: #ff0000;
+}
+
+img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: unset;
+}
+
+img#left, img#right {
+  top: 0;
+  left: 0;
+}
+
+img .logo {
+  position: relative;
+}
+
+footer {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  footer {
+    width: 80rem;
+    margin: auto;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.enter-button {
+  width: 20rem;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid #fff200 0.2rem;
+  font-size: 2.2rem;
+}
+
+.enter-button:hover {
+  border-color: #ff0000;
+}
+
+.enter-button a {
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem;
+  display: block;
+}
+
+.enter-button a:hover {
+  color: #ff0000;
+}
+
+#instructions {
+  position: absolute;
+  background-color: black;
+  width: 30%;
+  min-width: 30rem;
+  max-width: 50rem;
+  z-index: 999;
+  top: 1.6rem;
+  left: 1.6rem;
+  padding: 1.4rem;
+  cursor: pointer;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+#instructions h2 {
+  margin: 3.3rem 0;
+  font-size: 3.3rem;
+  cursor: pointer;
+}
+
+#instructions p {
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+#instructions p span {
+  color: #fff200;
+}
+/*# sourceMappingURL=main.css.map */

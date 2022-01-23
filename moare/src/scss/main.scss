@@ -10,11 +10,8 @@
 @import 'body/links';
 @import 'body/headings';
 @import 'body/main';
-@import 'body/blockquotes';
 @import 'body/bodytext';
 
-@import 'body/form/form';
-@import 'body/form/button';
 
 @import 'menu/logoletters';
 
@@ -38,22 +35,17 @@
 // Etrance Page 
 @import 'entrancepage/enterbutton';
 
-// About page
-@import 'logos/sponsors';
-@import 'about/newsletterform';
-@import 'about/nav';
-@import 'about/abstract';
 
 // Opening page 
-@import 'openingroom/main';
-@import 'openingroom/form';
-@import 'openingroom/headings';
-@import 'openingroom/welcomemessage';
-@import 'openingroom/textmessage';
-@import 'openingroom/scrollbar';
-@import 'openingroom/alert';
-@import 'openingroom/loader';
-@import 'openingroom/noscript';
+// @import 'openingroom/main';
+// @import 'openingroom/form';
+// @import 'openingroom/headings';
+// @import 'openingroom/welcomemessage';
+// @import 'openingroom/textmessage';
+// @import 'openingroom/scrollbar';
+// @import 'openingroom/alert';
+// @import 'openingroom/loader';
+// @import 'openingroom/noscript';
 
 // Instructions
 @import 'instructions/div';

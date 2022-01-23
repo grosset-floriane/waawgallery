@@ -5,14 +5,14 @@ body {
             position: fixed;
             top: 0;
             right: 0;
-            padding: 35px 25px;
+            padding: 3.5rem 2.5rem;
             font-family: $font-title;
             text-align: right;    
             z-index: 9999999;
         }
     
         &:not(#waaw-header) {
-            margin-top: 40px;
+            margin-top: 4rem;
         }
     }
 
@@ -21,26 +21,6 @@ body {
         z-index: 999999;
         min-width: 100%;
         height: 100vh;
-    }
-
-    &.info header#waaw-header.open {
-        background-color: black;
-    }
-
-    &.index header#waaw-header.open {
-        background-color: black;
-    }
-
-    &.credits header#waaw-header.open {
-        background-color: black;
-    }
-
-    &.about header#waaw-header.open {
-        background-color: black;
-    }
-
-    &.newsletter-pages header#waaw-header.open,
-    &.opening header#waaw-header.open{
         background-color: black;
     }
 

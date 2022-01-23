@@ -5,44 +5,23 @@ body {
             position: fixed;
             top: 0;
             right: 0;
-            padding: 25px;
+            padding: 2.5rem;
             font-family: $font-title;
             text-align: right;    
             z-index: 99999;
         }
     
         &:not(#waaw-header) {
-            margin-top: 40px;
+            margin-top: 4rem;
         }
     }
 
     
     header#waaw-header.open {
-        border: 2px dashed $yellow;
         z-index: 99999;
-        min-width: 100%;
-    }
-
-    &.info header#waaw-header.open {
-        background-color: $blue;
-    }
-
-    &.index header#waaw-header.open {
-        background-color: $turquoise;
-    }
-
-    &.credits header#waaw-header.open {
-        background-color: $purple;
-    }
-
-    &.about header#waaw-header.open {
-        background-color: $purple;
-    }
-
-    &.newsletter-pages header#waaw-header.open,
-    &.opening header#waaw-header.open{
-        background-color: $yellow;
-        border: dashed 2px $blue;
+        min-width: 30%;
+        height: 100vh;
+        background-color: $beige;
     }
 
 

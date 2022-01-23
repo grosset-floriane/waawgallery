@@ -1,0 +1,17 @@
+body {
+    &.about, &.info, &.newsletter-pages, &.error-pages {
+        main {
+            margin-top: $spacing-big;
+            padding: $spacing-mobile;
+            padding-top: 0;
+
+            @include tablet {
+                padding: $spacing-tablet;
+                padding-top: 0;
+
+                max-width: 80rem;
+                margin: $spacing-big auto 0;
+            }
+        }
+    }
+}

@@ -9,15 +9,15 @@ img {
     &.flower {
         
         width: 25%;
-        max-width: 600px;
+        max-width: 60rem;
         right: 0;
-        top:100px;
+        top:10rem;
     }
 
     &.curtain {
         width: 100%;
-        max-width: 1200px;
-        bottom: 20px;
+        max-width: 120rem;
+        bottom: 2rem;
         left: -50%;
         top: 45%;
         z-index: -1;
@@ -25,7 +25,7 @@ img {
 
     &.sky {
         position: absolute;
-        top: -40px;
+        top: -4rem;
         z-index: -1;
     }
 
@@ -39,11 +39,21 @@ img {
     justify-content: space-between;
 
     &.wokeup {
-        margin-top: 20em;
+       margin-top: 3rem;
         display: block;
+
+        @include desktop {
+             margin-top: 36rem;
+        }
         .gallery-image {
-            width: 66%;
-            margin-bottom: 5em;
+            width: 90%;
+            margin-bottom: 5.4rem;
+            @include desktop {
+                width: 66%;
+                margin-bottom: 9rem;
+            }
+            
+            
 
             &.right {
                 margin-left: auto;
@@ -53,7 +63,7 @@ img {
     }
 
     .gallery-image {
-        margin-bottom: 1em;
+        margin-bottom: 1.5rem;
         width: 100%;
         height: 100%;
         @include desktop {
@@ -66,10 +76,10 @@ img {
     }
 }
 
-.part4 #drawings {
+.disconnected #drawings {
     img {
         width: 75%;
         margin-left: auto;
-        margin-bottom: 1em;
+        margin-bottom: 1.5rem;
     }
 }

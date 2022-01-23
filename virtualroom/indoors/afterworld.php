@@ -1,5 +1,10 @@
 <?php
-    define('MAGIC', "WAAWamazing");
+define('MAGIC', "WAAWamazing");
+require  "../../classes/InfoPage.php";
+
+$newPage = new InfoPage("/virtualroom/indoors/", $conn);
+$head = $newPage->getHead($newPage->pageData);
+$header = $newPage->getHeader($newPage->pageData);
 
      // connection to the database
      require_once '../../../private/accessWAAW.php';
@@ -84,29 +89,8 @@
 <head>
     
     <title>After world // Indoors</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
-    <script src="../assets/js/menu.js"></script> -->
-    <?php 
-//     include('/inc/functions.php');
-// $ua = getBrowser();
-// $browser = $ua['name'];
-
-
-?>
-    <!-- Mandatory -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <?php include('inc/head.php'); ?>
-
-    <!-- Styles  -->
-    <?php 
-    if (isset($browser) && $browser == 'Google Chrome') {
-        echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/assets/css/chrome.css\" />";
-    }
-    ?>
-
-
+    <?php echo $head; ?>
+    
     <script>
     // This code redirect to url containing screen in GET
 
@@ -131,12 +115,11 @@
         
     }
     </script>
-    </head>
-    <body class="part5">
-<?php include '../../inc/header.php'; ?>
 
+</head>
+<body class="afterworld">
+    <?php echo $header;?>
 
-   
    <main>
    <header>
             <h1><img src="assets/img/afterworld/indoorstitle.png" alt="Indoors title" class="title"></h1>

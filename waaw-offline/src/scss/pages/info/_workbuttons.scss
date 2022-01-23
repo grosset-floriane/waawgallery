@@ -1,0 +1,58 @@
+.work-section > a {
+    text-decoration: none;
+
+    &:hover, &:focus-visible {
+        background-color: $color-white;
+
+        .online-work-button {
+            background-color: $color-red;
+            color: $color-white;
+        
+
+            &::after {
+                left: 0;
+                width: 100%;
+                transition: $transition-duration $transition-effect width,
+                            $transition-duration $transition-effect left;
+            }
+        }
+    }
+}
+
+.online-work-button {
+    margin: auto;
+    margin-bottom: 0;
+    display: block;
+    max-width: 25rem;
+    position: relative;
+    font-size: $font-size-large;
+    color: $color-red;
+    line-height: calc(#{$font-size-base} + #{$spacing-small});
+    text-align: center;
+    text-decoration: none;
+
+    .online-work-tag {
+        display: block;
+        margin-bottom: .25rem;
+        background-color: $color-white;
+        color: $color-red;
+        font-size: 1.2rem;
+        letter-spacing: .05rem;
+        text-transform: uppercase;
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        height: .3rem;
+        
+        position: relative;
+        bottom: -.75rem;
+        left: 50%;
+        width: 0;
+        background-color: $color-red;
+        transition: $transition-duration $transition-effect width,
+                    $transition-duration $transition-effect left;
+    }
+
+}

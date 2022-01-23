@@ -1,0 +1,26 @@
+.skip-to-content-link {
+    position: fixed;
+    top: -10rem;
+    width: 100%;
+    z-index: 9999;
+
+    a:focus {
+        display: block;
+        position: relative;
+        top: calc(#{$spacing-big} + #{$spacing-double});
+        left: $spacing-double;
+
+        width: fit-content;
+        background-color: $color-white;
+        padding: $spacing-mobile;
+
+        border: .1rem solid $color-black;
+        outline: 0;
+        
+        font-size: $font-size-base;
+        text-align: center;
+        font-family: $font-body;
+        text-decoration: none;
+        color: black;
+    }
+}

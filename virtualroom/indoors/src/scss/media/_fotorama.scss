@@ -1,18 +1,12 @@
 #walkers {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     
 
     .fotorama {
-        // max-width: calc(50vw - 1em);
+        
         width: 50%;
-        
-
-        img {
-
-            
-        }
-        
     }
 }
 

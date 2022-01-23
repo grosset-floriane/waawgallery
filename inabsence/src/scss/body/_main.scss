@@ -1,16 +1,18 @@
 body {
-    &.info, &.about {
+    &.info {
         main {
-            padding: 10px;
+            padding: 1.5rem;
+            margin-top: 5rem;
         
             @media (min-width: 900px) {
-                width: 800px;
+                width: 80rem;
                 margin: auto;
+                margin-top: 5rem;
             }
         }
     }
 
     main {
-        padding: 1.5em;
+        padding: 2.7rem;
     }
 }

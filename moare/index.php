@@ -10,6 +10,13 @@
     } else {
         $coockie = true;
     }
+
+
+    require  "../classes/InfoPage.php";
+
+    $newPage = new InfoPage("/moare/", $conn);
+    $head = $newPage->getHead($newPage->pageData);
+    $header = $newPage->getHeader($newPage->pageData);
 ?>
 
 
@@ -22,7 +29,7 @@
     <title>Moare</title>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     
-    <?php include 'inc/head.php';?>
+    <?php echo $head; ?>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     
     <script>
@@ -63,7 +70,7 @@
     </script>
     </head>
 <body class="index" id="index">
-<?php include '../inc/header.php'; ?>
+<?php echo $header;?>
 
 <script>
     var pixel = 8;
