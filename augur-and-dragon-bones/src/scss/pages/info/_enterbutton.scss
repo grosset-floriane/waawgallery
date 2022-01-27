@@ -1,0 +1,16 @@
+
+.enter-button {
+    border: solid $beige .1rem;
+    &:hover {
+        border: solid $white .1rem;
+    }
+    a {
+        color: $beige;
+        &:hover {
+            color: $white;
+        }
+    }  
+}
+
+
+

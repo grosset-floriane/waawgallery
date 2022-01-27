@@ -1,0 +1,25 @@
+#waaw-header {
+    li {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: $beige;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                color: $beige;
+            }
+        }
+
+        > ul > li {
+            margin-left: 2.5rem;
+        }
+    }
+
+    nav .logoletters {
+        &.rotatedW {
+            top: .1rem;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.artwork-intro p {
+    color: $beige;
+    &:first-child {
+        font-style: oblique;
+        color: $white;
+    }
+}

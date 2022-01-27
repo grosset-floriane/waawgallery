@@ -1,0 +1,53 @@
+button#buttonMenu {
+    cursor: pointer;
+    color: $white;
+    &.toggled {
+        color: $beige;
+    }
+
+    #info-icon {
+
+        path {
+            fill: $white;
+        }
+        
+    }
+
+    &.toggled {
+        #info-icon {
+
+            path {
+                fill: $beige;
+            }
+        }
+    }
+
+
+
+
+
+
+    
+    // toggled -> letters of the logo
+    &.toggled {
+        .firstW {
+            color: $beige;
+        }
+    }
+
+
+}
+
+
+body.info button#buttonMenu.toggled, body.credits button#buttonMenu.toggled, body.about button#buttonMenu.toggled {
+    color: $beige;
+
+    .firstW {
+        color: $beige;
+    }
+
+    #info-icon path {
+            fill: $beige;
+        
+    }
+}

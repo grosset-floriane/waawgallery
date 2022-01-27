@@ -26,7 +26,7 @@ if (!defined('MAGIC')) { // quotes importantes
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Styles  -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/augur-and-dragon-bones/assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/augur-and-dragon-bones/assets/css/main.min.css" />
     <?php 
     // if ($browser == 'Google Chrome') {
     //     echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/assets/css/chrome.css\" />";

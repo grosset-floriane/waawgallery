@@ -1,37 +1,38 @@
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
+@import 'helpers/parameters';
+@import 'helpers/fonts';
+@import 'layout/responsive';
 
-@import 'reset';
+// Components
+    // Containers
+    @import 'components/containers/body';
+    // Textuals
+    @import 'components/textual/paragraphs';
+    @import 'components/textual/headings';
+    @import 'components/textual/links';
 
+    // Medias
+    @import 'components/medias/waawlogo';
+    @import 'components/medias/img';
+    @import 'components/medias/video';
 
+    // Navigations
+        // Main Nav
+        @import 'components/navigations/mainnav/header';
+        @import 'components/navigations/mainnav/button';
+        @import 'components/navigations/mainnav/nav';
+        @import 'components/navigations/mainnav/listelements';
+        @import 'components/navigations/mainnav/logoletters';
+    @import 'components/navigations/skiptocontent';
 
-@import 'body/links';
-@import 'body/headings';
-@import 'body/main';
-@import 'body/bodytext';
-@import 'body/startbutton';
-@import 'body/loadingbar';
+// Pages
+    // info
+    @import 'pages/info/artistintro';
+    @import 'pages/info/enterbutton';
 
-@import 'menu/logoletters';
-
-// Menu styles
-@import 'menu/header';
-@import 'menu/button';
-@import 'menu/nav';
-
-
-// Logos
-@import 'logos/waawlogo';
-
-// Medias
-@import 'media/images';
-
-// Footer
-@import 'footer/footer';
-
-// Etrance Page 
-@import 'entrancepage/enterbutton';
+    // index
+    @import 'pages/index/main';
+    @import 'pages/index/loadingbar';
+    @import 'pages/index/startbutton';
 
 
 
