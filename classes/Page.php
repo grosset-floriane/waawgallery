@@ -56,6 +56,9 @@ class Page
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin> 
         <link href=\"https://fonts.googleapis.com/css?family=Raleway&display=swap\" rel=\"stylesheet\">
 
+        <!-- GLOBAL STYLESHEET -->
+        <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"" . BASE_URL . "/assets/css/main.css\" />
+
         <title>$title</title>
         $specialHead
 
@@ -110,7 +113,6 @@ class Page
             case "/waaw-offline/":
                 return "
                 <!-- STYLES -->
-                <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"" . BASE_URL . "/assets/css/main.css\" />
                 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"" . BASE_URL . "/waaw-offline/assets/css/main.css\" />
                 <!-- FONTS --> 
                 <link href=\"https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Raleway:wght@500&display=swap\" rel=\"stylesheet\"> 
@@ -261,9 +263,6 @@ return "
                 <footer>
                     <hr>
                     <p>Follow us: <a href=\"https://www.facebook.com/WAAWgallery/\" target=\"_BLANK\">Facebook</a> / <a href=\"https://www.instagram.com/waawgallery/\" target=\"_BLANK\">Instagram</a> / <a href=\"about.php#newsletter\">Newsletter</a></p>
-                    <!--JB Tracker--> <script type=\"text/javascript\"> var _paq = _paq || []; (function(){ if(window.apScriptInserted) return; _paq.push(['clientToken', 'P%2bsIjEMd6oQ%3d']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://prod.benchmarkemail.com/tracker.bundle.js'; s.parentNode.insertBefore(g,s); window.apScriptInserted=true;})(); </script> <!--/JB Tracker--> <!-- BEGIN: Benchmark Email Signup Form Code -->
-                        <script type=\"text/javascript\" id=\"lbscript1632462\" src=\"https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQImys%252FxI%252BQCMxpSu0%252BSv5KLxiES2fVdRFOhY%252FIBFwtog%253D%253D\"></script><noscript>Please enable JavaScript <br /><div align=\"center\" style=\"padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;\"><a href=\"https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms\" target=\"_new\" style=\"text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;\">Email Marketing </a> by Benchmark</div></noscript>
-                        <!-- END: Benchmark Email Signup Form Code -->
                     <p>© 2020 WAAW All Rights Reserved with the exception of the pictures that belong to their author.<br>
                         Graphic Identity & Web Design by <a href=\"http://florianegrosset.com\" target=\"_BLANK\">Floriane Grosset</a></p>
                 </footer>

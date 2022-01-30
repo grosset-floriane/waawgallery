@@ -226,24 +226,32 @@ class AboutPage extends Page
                     Galerie 21, Künstler*innenhaus Vorwerk-Stift
                 </a>. 
             </p>
-            <div class=\"institutions-logos\">
-                <a href=\"https://www.kulturradet.no/\">
-                    <img src=\"assets/img/kulturraadet_sort_stor.png\" class=\"grant-logo\">
-                </a>
-                <a href=\"https://www.hamburg.de/bkm/wir-ueber-uns/\">
-                    <img src=\"assets/img/Behoerde-sw.png\" class=\"grant-logo\">
-                </a>
-                <a href=\"http://vorwerkstift.de/\">
-                    <img src=\"assets/img/Logo_Galerie_21.jpg\" class=\"grant-logo\">
-                </a>
-            </div>
+
+
+            <ul class=\"institutions-logos\">
+                <li>
+                    <a href=\"https://www.kulturradet.no/\">
+                        <img loading=\"lazy\" src=\"assets/img/kulturraadet_sort_stor.png\" class=\"grant-logo\">
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://www.hamburg.de/bkm/wir-ueber-uns/\">
+                        <img loading=\"lazy\" src=\"assets/img/Behoerde-sw.png\" class=\"grant-logo\">
+                    </a>
+                </li>
+                <li>
+                    <a href=\"http://vorwerkstift.de/\">
+                        <img loading=\"lazy\" src=\"assets/img/Logo_Galerie_21.jpg\" class=\"grant-logo\">
+                    </a>
+                </li>
+            </ul>
 
                 
 
 
             <section id=\"newsletter\">
                 <!--JB Tracker--> <script type=\"text/javascript\"> var _paq = _paq || []; (function(){ if(window.apScriptInserted) return; _paq.push(['clientToken', 'P%2bsIjEMd6oQ%3d']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://prod.benchmarkemail.com/tracker.bundle.js'; s.parentNode.insertBefore(g,s); window.apScriptInserted=true;})(); </script> <!--/JB Tracker--> <!-- BEGIN: Benchmark Email Signup Form Code -->
-                <script type=\"text/javascript\" id=\"lbscript1632457\" src=\"https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMRx327Flsq%252BILJ25jqXIyRILxiES2fVdRFOhY%252FIBFwtog%253D%253D\"></script><noscript>Please enable JavaScript <br /><div align=\"center\" style=\"padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;\"><a href=\"https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms\" target=\"_new\" style=\"text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;\">Email Marketing </a> by Benchmark</div></noscript>
+                <script type=\"text/javascript\" id=\"lbscript1632457\" src=\"https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMRx327Flsq%252BILJ25jqXIyRILxiES2fVdRFOhY%252FIBFwtog%253D%253D\"></script><noscript>Please enable JavaScript <br /><div align=\"center\" style=\"padding-top:5px;font-family:Raleway,sans-serif;font-size:10px;color:#999999;\"><a href=\"https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms\" target=\"_new\" style=\"text-decoration:none;font-family:Raleway,sans-serif;font-size:10px;color:#999999;\">Email Marketing </a> by Benchmark</div></noscript>
                 <!-- END: Benchmark Email Signup Form Code -->
 
 
