@@ -169,7 +169,7 @@ button#buttonMenu.toggled .firstW, button#buttonMenu.toggled .rotatedW, button#b
   color: white;
 }
 
-.work-section > a:hover .online-work-button::after, .work-section > a:focus-visible .online-work-button::after {
+.work-section > a:hover .online-work-button::after, .work-section > a:hover #newsletter > div fieldset:last-child div::after, #newsletter > div fieldset:last-child .work-section > a:hover div::after, .work-section > a:focus-visible .online-work-button::after, .work-section > a:focus-visible #newsletter > div fieldset:last-child div::after, #newsletter > div fieldset:last-child .work-section > a:focus-visible div::after {
   left: 0;
   width: 100%;
   transition: 1s ease width, 1s ease left;
@@ -198,7 +198,7 @@ button#buttonMenu.toggled .firstW, button#buttonMenu.toggled .rotatedW, button#b
   text-transform: uppercase;
 }
 
-.online-work-button::after {
+.online-work-button::after, #newsletter > div fieldset:last-child div::after {
   content: " ";
   display: block;
   height: .3rem;
@@ -280,59 +280,21 @@ img.work-image {
   fill: white;
 }
 
-#newsletter {
-  margin-top: 3em;
-  margin-bottom: 2em;
+#newsletter > div fieldset strong {
+  font-family: "Raleway", sans-serif !important;
 }
 
-#newsletter fieldset:first-child span {
-  font-family: "Roboto", sans-serif !important;
-  font-size: 120% !important;
-  font-weight: normal !important;
+#newsletter > div fieldset:last-child div:hover {
+  background-color: #73496c !important;
 }
 
-#secondary-nav {
-  display: block;
-  font-style: 1em;
-  font-family: "Raleway", sans-serif;
-  margin-top: 3.5em;
-  list-style: none;
-  margin-left: 1.2em;
-}
-
-#secondary-nav li {
-  line-height: 1.5em;
-  font-size: 1.2em;
-  color: #4e64a6;
-  list-style-position: inside;
-  margin: 0;
-}
-
-#secondary-nav li a {
-  color: #73496c;
-  padding-left: .5em;
-}
-
-#secondary-nav li a:hover {
-  color: #a66953;
+#newsletter > div fieldset:last-child div:hover::after {
+  left: 0;
+  width: 100%;
+  transition: 1s ease width, 1s ease left;
 }
 
 #secondary-nav li::before {
-  content: "\2022";
   color: #73496c;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-#secondary-nav li:hover::before {
-  color: #a66953;
-}
-
-.abstract {
-  font-size: 1.2em;
-  margin-bottom: 2em;
-  font-weight: 800;
 }
 /*# sourceMappingURL=main.css.map */
