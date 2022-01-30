@@ -209,28 +209,6 @@ body main {
   padding: 2.7rem;
 }
 
-p {
-  margin: 1em 0;
-  font-size: 2.4rem;
-}
-
-div {
-  line-height: 2.5rem;
-  font-size: 1.9rem;
-}
-
-div.empty {
-  height: 2.5rem;
-}
-
-div.left {
-  text-align: left;
-}
-
-div.right {
-  text-align: right;
-}
-
 h2 {
   text-transform: uppercase;
   font-weight: normal;
@@ -296,5 +274,21 @@ footer P {
   text-decoration: none;
   padding: 1rem;
   display: block;
+}
+
+p {
+  font-family: "Open Sans Condensed",sans-serif;
+  letter-spacing: .05rem;
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+div {
+  line-height: 2.5rem;
+  font-size: 1.9rem;
+}
+
+div.left {
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */
