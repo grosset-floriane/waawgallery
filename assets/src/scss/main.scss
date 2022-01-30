@@ -26,8 +26,15 @@
 @import "components/navigations/mainnav/button";
 @import "components/navigations/mainnav/logoletters";
 @import "components/navigations/mainnav/listelements";
+@import "components/navigations/enterbutton";
 
 @import "components/navigations/skiptocontent";
 @import "components/navigations/scrollbar";
 
 
+// Pages
+
+@import "pages/about/abstract";
+@import "pages/about/nav";
+@import "pages/about/newsletterform";
+@import "pages/about/sponsors";

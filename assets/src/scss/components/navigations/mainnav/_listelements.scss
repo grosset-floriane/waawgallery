@@ -15,20 +15,20 @@
 
     nav .logoletters {
         &.firstW {
-            left: 5px;
+            left: .5rem;
         }
 
         &.rotatedW {
             top: .2rem;
-            left: 2px;
+            left: .2rem;
             line-height: 1;
-            padding-top: 2px;
+            padding-top: .2rem;
         }
 
         &.lastW {
-            left: -4px;
+            left: -.4rem;
             line-height: 1;
-            padding-top: 2px;
+            padding-top: .2rem;
         }
     }
 
