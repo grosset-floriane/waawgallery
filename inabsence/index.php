@@ -255,7 +255,7 @@ $header = $newPage->getHeader($newPage->pageData);
     </script>
 </head>
 
-<body onLoad="poem()">
+<body class="index" onLoad="poem()">
     <?php echo $header;?>
     <main id="main">
 

@@ -1,0 +1,10 @@
+body header#waaw-header{
+    &.open {
+        background-color: black;
+
+        @media (min-width: 900px) {
+            min-width: 50rem;
+            background-color: rgba(0, 0, 0, 0.719); 
+        }
+    }
+}
