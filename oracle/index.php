@@ -55,7 +55,7 @@ $bookTitle, $author
     <title>Bibliomancy Oracle // Lucila Mayol</title>
     <?php echo $head; ?>
 </head>
-<body class="index">
+<body class="index work">
     <?php echo $header;
     echo $err;
     ?>

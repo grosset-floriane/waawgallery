@@ -1,0 +1,30 @@
+
+body {
+    header#waaw-header.open {
+        min-width: initial;
+        width: 90vw;
+
+        margin: 3rem 5%;
+        max-height: calc(100vh - 6rem);
+
+        @include desktop {
+          width: 80%; 
+          margin: 5rem 10%; 
+          max-height: calc(100vh - 10rem);
+          overflow-y: hidden;
+        }  
+    }
+
+    &.about header#waaw-header.open {
+        background-color: $purple;
+    }
+
+    &.newsletter-pages header#waaw-header.open,
+    &.opening header#waaw-header.open{
+        background-color: $yellow;
+        border: dashed .2rem $blue;
+    }
+
+
+}
+

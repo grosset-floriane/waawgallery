@@ -1,50 +1,72 @@
-@import 'variables';
-@import 'mixins';
-@import 'animations';
+@import 'helpers/parameters';
+@import 'layout/responsive';
+@import 'helpers/animations';
 
-@import 'reset';
+// Components
+    // Containers
+    @import 'components/containers/body';
+    @import 'components/containers/main';
+    @import 'components/containers/footer';
 
+    // Textual
+    @import 'components/textual/headings';
+    @import 'components/textual/paragraphs';
+    @import 'components/textual/links';
 
+    // Navigations
+    @import 'components/navigations/enterbutton';
+        // Main nav
+    @import 'components/navigations/mainnav/header';
+    @import 'components/navigations/mainnav/button';
+    @import 'components/navigations/mainnav/listelements';
+    @import 'components/navigations/mainnav/nav';
 
-@import 'body/links';
-@import 'body/main';
-@import 'body/blockquotes';
-@import 'body/bodytext';
-
-@import 'body/form/form';
-@import 'body/form/button';
-
-@import 'menu/logoletters';
-
-// Menu styles
-@import 'menu/header';
-@import 'menu/button';
-@import 'menu/nav';
-
-// Logos
-@import 'logos/waawlogo';
-
-// Medias
-@import 'media/images';
-
-// Footer
-@import 'footer/footer';
-
-// Etrance Page 
-@import 'entrancepage/enterbutton';
-
-// Opening page 
-@import 'openingroom/main';
-@import 'openingroom/form';
-@import 'openingroom/headings';
-@import 'openingroom/welcomemessage';
-@import 'openingroom/textmessage';
-@import 'openingroom/scrollbar';
-@import 'openingroom/alert';
-@import 'openingroom/loader';
-@import 'openingroom/noscript';
+    // Dividers
+    @import 'components/dividers/hr';
 
 
+    // Media
+    @import 'components/media/waawlogo';
+
+
+
+// Pages
+    // Info
+        @import 'pages/info/mainnavcolors';
+
+    // Index
+        // Form
+        @import 'pages/index/form/form';
+        @import 'pages/index/form/button';
+        @import 'pages/index/logooracle';
+
+
+        // Textual
+        @import 'pages/index/textual/blockquotes';
+        @import 'pages/index/textual/errormessage';
+        @import 'pages/index/textual/paragraphs';
+        @import 'pages/index/textual/links';
+
+        // Navigations
+        @import 'pages/index/navigations/mainnavcolorscredits';
+        @import 'pages/index/navigations/mainnavcolorsindex';
+
+        // Opening page 
+        @import 'pages/openingroom/body';
+        @import 'pages/openingroom/main';
+        @import 'pages/openingroom/form';
+        @import 'pages/openingroom/headings';
+        @import 'pages/openingroom/welcomemessage';
+        @import 'pages/openingroom/textmessage';
+        @import 'pages/openingroom/scrollbar';
+        @import 'pages/openingroom/alert';
+        @import 'pages/openingroom/loader';
+        @import 'pages/openingroom/noscript';
+
+
+
+
+        
 
 
 

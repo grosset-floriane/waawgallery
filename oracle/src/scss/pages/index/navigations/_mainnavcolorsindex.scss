@@ -1,0 +1,48 @@
+//** MAIN NAV COLORS: INDEX PAGE **//
+
+.index {
+    header#waaw-header.open {
+        background-color: $turquoise;
+        border: .2rem dashed $purple;
+
+        button#buttonMenu {
+            color: $green;
+
+            #info-icon {
+                path {
+                    fill: $green;
+                }  
+            }
+
+            &.toggled {
+                color: $purple;
+
+                .firstW {
+                    color: $purple;
+                } 
+
+                #info-icon {
+                    path {
+                        fill: $purple;
+                    }
+                }
+            }
+        }
+
+
+        li {
+            color: $yellow;
+            a {
+                color: $purple;
+            }
+    
+            .menu-title {
+                background-color: $purple;
+            }
+    
+            li {
+                list-style: url('../img/puce-star-yellow.svg');
+            }
+        }
+    }
+}

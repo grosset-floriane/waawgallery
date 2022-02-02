@@ -43,30 +43,9 @@
   }
 }
 
-:root {
-  font-size: 62.5%;
-  overflow: hidden;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Times New Roman", serif;
-  margin: 0;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  height: 100vh;
-}
-
 body.info {
   background-color: #0C34E8;
   color: #FFFA0A;
-  font-size: 2.4rem;
-  line-height: 2.3rem;
 }
 
 body.index {
@@ -77,36 +56,24 @@ body.credits {
   background-color: #B000FF;
 }
 
-body.opening {
-  background-color: #0C34E8;
-  animation-name: blinkBackground;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  transition: ease background-color 1s;
+.work main {
+  padding-bottom: 12rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+footer p {
+  line-height: 2.5rem;
 }
 
-li {
-  list-style-type: none;
+h2 {
+  line-height: 5rem;
+  margin-bottom: 5rem;
 }
 
-input, form input::placeholder {
-  border: none;
-  outline: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-hr {
-  border: 0.2rem dashed #FFFA0A;
-  border-bottom: none;
+p {
+  line-height: 3.5rem;
+  font-size: 2.4rem;
+  text-align: justify;
+  font-family: "Times New Roman", serif;
 }
 
 a {
@@ -123,43 +90,182 @@ a:focus-visible, button:focus-visible {
   outline-offset: .2rem;
 }
 
-main {
-  padding: 2rem;
+.buttons {
+  margin-bottom: 4.8rem;
 }
 
-@media (min-width: 900px) {
-  main {
-    width: 80rem;
-    margin: auto;
-    padding-top: 0;
-  }
+.buttons .enter-button {
+  margin-top: 4.8rem;
+  border: dashed #0CE818 0.2rem;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
 }
 
-main h1 {
-  margin-bottom: 9.6rem;
+.buttons .enter-button a {
+  color: inherit;
+  font-size: 150%;
+  font-weight: normal;
 }
 
-main h2 {
-  line-height: 5rem;
-  margin-bottom: 5rem;
+.buttons .enter-button a:focus-visible {
+  outline-offset: .6rem;
 }
 
-body.index main, body.credits main {
-  padding-bottom: 8rem;
-}
-
-body.info main {
-  margin-top: 6rem;
+body header#waaw-header.open {
+  min-width: initial;
+  width: 90vw;
+  margin: 3rem 5%;
+  max-height: calc(100vh - 6rem);
 }
 
 @media (min-width: 800px) {
-  body.info main {
-    margin-top: 12rem;
+  body header#waaw-header.open {
+    width: 80%;
+    margin: 5rem 10%;
+    max-height: calc(100vh - 10rem);
+    overflow-y: hidden;
   }
 }
 
-body.info main p {
-  line-height: 3.5rem;
+body.about header#waaw-header.open {
+  background-color: #B000FF;
+}
+
+body.newsletter-pages header#waaw-header.open,
+body.opening header#waaw-header.open {
+  background-color: #FFFA0A;
+  border: dashed 0.2rem #0C34E8;
+}
+
+button#buttonMenu {
+  color: #0CE818;
+}
+
+button#buttonMenu #info-icon path {
+  fill: #0CE818;
+}
+
+#waaw-header li {
+  font-size: 2.5rem;
+}
+
+#waaw-header li a:focus-visible {
+  outline-offset: -.5rem;
+}
+
+#waaw-header li .menu-title {
+  margin-top: 2rem;
+  display: inline-block;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+#waaw-header li li {
+  margin-left: 3rem;
+}
+
+#waaw-header nav.open {
+  max-height: calc(100vh - 13.4rem);
+}
+
+hr {
+  border: 0.2rem dashed #FFFA0A;
+  border-bottom: none;
+}
+
+.logo path {
+  fill: #FFFA0A;
+}
+
+.info header#waaw-header.open {
+  background-color: #0C34E8;
+  border: 0.2rem dashed #FFFA0A;
+}
+
+.info header#waaw-header.open button#buttonMenu {
+  color: #0CE818;
+}
+
+.info header#waaw-header.open button#buttonMenu #info-icon path {
+  fill: #0CE818;
+}
+
+.info header#waaw-header.open button#buttonMenu.toggled {
+  color: #FFFA0A;
+}
+
+.info header#waaw-header.open button#buttonMenu.toggled .firstW {
+  color: #FFFA0A;
+}
+
+.info header#waaw-header.open button#buttonMenu.toggled #info-icon path {
+  fill: #FFFA0A;
+}
+
+.info header#waaw-header.open li {
+  color: #FFFA0A;
+}
+
+.info header#waaw-header.open li a {
+  color: #FFFA0A;
+}
+
+.info header#waaw-header.open li .menu-title {
+  background-color: #B000FF;
+}
+
+.info header#waaw-header.open li li {
+  list-style: url("../img/puce-star-yellow.svg");
+}
+
+form {
+  background-color: white;
+  padding: 0;
+  display: flex;
+}
+
+form input {
+  width: calc(100% - 5rem);
+  background-color: transparent;
+  font-family: "Times New Roman", serif;
+  color: #0C34E8;
+  height: 4rem;
+  border: none;
+  padding-left: 1rem;
+}
+
+form input:focus-visible {
+  outline: dashed 2px #FFFA0A;
+}
+
+form input::placeholder {
+  color: #0C34E8;
+}
+
+button[type="submit"] {
+  background-color: #0CE818;
+  padding: .7rem;
+  margin-left: auto;
+  font-family: "Times New Roman", serif;
+  margin: .5rem;
+  margin-left: auto;
+  text-transform: uppercase;
+  color: #0C34E8;
+  font-weight: bold;
+}
+
+img.logo-oracle {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: -5.9rem;
+}
+
+@media (min-width: 800px) {
+  img.logo-oracle {
+    top: -117px;
+  }
 }
 
 blockquote {
@@ -204,303 +310,14 @@ blockquote p:last-child .title {
   font-style: italic;
 }
 
-p {
-  line-height: 3rem;
-  margin: 2.4rem 0;
-  text-align: justify;
-}
-
-p.credits {
-  font-size: 2.4rem;
-  margin: 4.8rem 0;
-  color: #00FFF7;
-  line-height: 3rem;
-}
-
 p.message {
   color: #B000FF;
   font-weight: bold;
 }
 
-form {
-  background-color: white;
-  padding: 0;
-  display: flex;
-  padding-left: 1rem;
-}
-
-form input, form input::placeholder {
-  width: calc(100% - 5rem);
-  background-color: transparent;
-  font-family: "Times New Roman", serif;
-  color: #0C34E8;
-  height: 4rem;
-}
-
-button[type="submit"] {
-  background-color: #0CE818;
-  padding: .7rem;
-  margin-left: auto;
-  font-family: "Times New Roman", serif;
-  margin: .5rem;
-  margin-left: auto;
-  text-transform: uppercase;
-  color: #0C34E8;
-  font-weight: bold;
-}
-
-.logoletters {
-  position: relative;
-  display: inline-block;
-}
-
-.logoletters.firstW {
-  letter-spacing: -.1rem;
-}
-
-.logoletters.rotatedW {
-  transform: rotate(180deg);
-  letter-spacing: -.2rem;
-}
-
-body header#waaw-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 2rem;
-  font-family: "Raleway", sans-serif;
-  text-align: right;
-  z-index: 99999;
-}
-
-@media (min-width: 800px) {
-  body header#waaw-header {
-    padding: 2.5rem 5rem;
-  }
-}
-
-body header:not(#waaw-header) {
-  margin-top: 4rem;
-}
-
-body header#waaw-header.open {
-  border: 0.2rem dashed #FFFA0A;
-  z-index: 99999;
-  width: 90%;
-  margin: 3rem 5%;
-  max-height: calc(100vh - 6rem);
-}
-
-@media (min-width: 800px) {
-  body header#waaw-header.open {
-    width: 80%;
-    margin: 5rem 10%;
-    max-height: calc(100vh - 10rem);
-  }
-}
-
-body.info header#waaw-header.open {
-  background-color: #0C34E8;
-}
-
-body.index header#waaw-header.open {
-  background-color: #00FFF7;
-}
-
-body.credits header#waaw-header.open {
-  background-color: #B000FF;
-}
-
-body.about header#waaw-header.open {
-  background-color: #B000FF;
-}
-
-body.newsletter-pages header#waaw-header.open,
-body.opening header#waaw-header.open {
-  background-color: #FFFA0A;
-  border: dashed 0.2rem #0C34E8;
-}
-
-button#buttonMenu {
-  cursor: pointer;
-  font-family: "Raleway", sans-serif;
-  color: #0CE818;
-  font-size: 2.2rem;
-  font-weight: bolder;
-  padding: .4rem 0 .4rem;
-  margin-bottom: 0em;
-  position: relative;
-  top: -1.1rem;
-  transition: 1s ease color;
-}
-
-button#buttonMenu.toggled {
-  left: 0;
-  color: #0C34E8;
-  transition: 1s ease color;
-}
-
-button#buttonMenu #info-icon {
-  width: 2.4rem;
-  position: relative;
-  top: .3rem;
-  left: 5.3rem;
-}
-
-button#buttonMenu #info-icon path {
-  fill: #0CE818;
-  transition: 1s ease color;
-}
-
-button#buttonMenu.toggled #info-icon {
-  left: 0;
-  transition: ease 1s left;
-}
-
-button#buttonMenu.toggled #info-icon path {
-  fill: #0C34E8;
-  transition: 1s ease fill;
-}
-
-button#buttonMenu .logoletters.firstW {
-  left: 4.4rem;
-  color: transparent;
-}
-
-button#buttonMenu .logoletters.rotatedW {
-  top: -.2rem;
-  left: 3rem;
-}
-
-button#buttonMenu .logoletters.lastW {
-  left: 0;
-}
-
-button#buttonMenu.toggled .firstW {
-  left: 0;
-  color: #0C34E8;
-  transition: ease 1s left, ease 1s color;
-}
-
-button#buttonMenu.toggled .rotatedW {
-  top: .1rem;
-  left: .1rem;
-  transition: ease 1s left;
-}
-
-button#buttonMenu.toggled .lastW {
-  left: -.2rem;
-  transition: ease 1s left;
-}
-
-body.info button#buttonMenu.toggled, body.credits button#buttonMenu.toggled, body.about button#buttonMenu.toggled {
-  color: #FFFA0A;
-}
-
-body.info button#buttonMenu.toggled .firstW, body.credits button#buttonMenu.toggled .firstW, body.about button#buttonMenu.toggled .firstW {
-  color: #FFFA0A;
-}
-
-body.info button#buttonMenu.toggled #info-icon path, body.credits button#buttonMenu.toggled #info-icon path, body.about button#buttonMenu.toggled #info-icon path {
-  fill: #FFFA0A;
-}
-
-nav {
-  display: none;
-}
-
-nav.open {
-  display: block;
-  max-height: calc(100vh - 10rem - 2.5rem - 4rem);
-  overflow-y: auto;
-}
-
-nav li {
-  text-align: left;
-  font-size: 2.5rem;
-  color: #0C34E8;
-  font-weight: bold;
-  margin-left: 1rem;
-}
-
-nav li a {
-  color: #0C34E8;
-  display: block;
-  padding: 1.3rem;
-}
-
-nav li a:focus-visible {
-  outline-offset: -.5rem;
-}
-
-nav li .menu-title {
-  background-color: #B000FF;
-  display: inline-block;
-  margin-top: 2rem;
-}
-
-nav li li {
-  list-style: url("../img/puce1.png");
-  margin-left: 3rem;
-}
-
-nav .logoletters.firstW {
-  left: .5rem;
-}
-
-nav .logoletters.rotatedW {
-  top: .1rem;
-  left: .2rem;
-}
-
-nav .logoletters.lastW {
-  left: -.4rem;
-}
-
-body.info header#waaw-header.open li, body.credits header#waaw-header.open li, body.about header#waaw-header.open li {
-  color: #FFFA0A;
-}
-
-body.info header#waaw-header.open li a, body.credits header#waaw-header.open li a, body.about header#waaw-header.open li a {
-  color: #FFFA0A;
-}
-
-.logo {
-  width: 15rem;
-}
-
-.logo svg {
-  width: 14rem;
-  height: 6rem;
-}
-
-@media (min-width: 800px) {
-  .logo svg {
-    width: 16rem;
-    height: 8rem;
-  }
-}
-
-.logo path {
-  fill: #FFFA0A;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-img.logo-oracle {
-  width: 50%;
-  margin: auto;
-  position: relative;
-  top: -5.9rem;
-}
-
-@media (min-width: 800px) {
-  img.logo-oracle {
-    top: -117px;
-  }
+p.credits {
+  margin: 4.8rem 0;
+  color: #00FFF7;
 }
 
 a[href="credits.php"], a[href="index.php"] {
@@ -508,49 +325,94 @@ a[href="credits.php"], a[href="index.php"] {
   outline-offset: 2rem;
 }
 
-footer {
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
+.credits header#waaw-header.open {
+  background-color: #B000FF;
+  border: 0.2rem dashed #00FFF7;
 }
 
-@media (min-width: 900px) {
-  footer {
-    width: 80rem;
-    margin: auto;
-  }
+.credits header#waaw-header.open button#buttonMenu {
+  color: #0CE818;
 }
 
-footer p {
-  line-height: 2.5rem;
+.credits header#waaw-header.open button#buttonMenu #info-icon path {
+  fill: #0CE818;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 4.8rem;
+.credits header#waaw-header.open button#buttonMenu.toggled {
+  color: #FFFA0A;
 }
 
-.enter-button {
-  width: 200px;
-  margin: auto;
-  margin-top: 4.8rem;
-  text-align: center;
-  text-transform: uppercase;
-  border: dashed #0CE818 0.2rem;
-  animation-name: blink;
+.credits header#waaw-header.open button#buttonMenu.toggled .firstW {
+  color: #FFFA0A;
+}
+
+.credits header#waaw-header.open button#buttonMenu.toggled #info-icon path {
+  fill: #FFFA0A;
+}
+
+.credits header#waaw-header.open li {
+  color: #B000FF;
+}
+
+.credits header#waaw-header.open li a {
+  color: #FFFA0A;
+}
+
+.credits header#waaw-header.open li .menu-title {
+  background-color: #00FFF7;
+}
+
+.credits header#waaw-header.open li li {
+  list-style: url("../img/puce-star-turquoise.svg");
+}
+
+.index header#waaw-header.open {
+  background-color: #00FFF7;
+  border: 0.2rem dashed #B000FF;
+}
+
+.index header#waaw-header.open button#buttonMenu {
+  color: #0CE818;
+}
+
+.index header#waaw-header.open button#buttonMenu #info-icon path {
+  fill: #0CE818;
+}
+
+.index header#waaw-header.open button#buttonMenu.toggled {
+  color: #B000FF;
+}
+
+.index header#waaw-header.open button#buttonMenu.toggled .firstW {
+  color: #B000FF;
+}
+
+.index header#waaw-header.open button#buttonMenu.toggled #info-icon path {
+  fill: #B000FF;
+}
+
+.index header#waaw-header.open li {
+  color: #FFFA0A;
+}
+
+.index header#waaw-header.open li a {
+  color: #B000FF;
+}
+
+.index header#waaw-header.open li .menu-title {
+  background-color: #B000FF;
+}
+
+.index header#waaw-header.open li li {
+  list-style: url("../img/puce-star-yellow.svg");
+}
+
+body.opening {
+  background-color: #0C34E8;
+  animation-name: blinkBackground;
   animation-iteration-count: infinite;
-  animation-duration: 2.5s;
-}
-
-.enter-button a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 1rem;
-}
-
-.enter-button a:focus-visible {
-  outline-offset: .6rem;
+  animation-duration: 20s;
+  transition: ease background-color 1s;
 }
 
 body.opening main {

@@ -1,0 +1,28 @@
+#waaw-header {
+    li {
+        font-size: 2.5rem;
+        // color: $blue;
+        
+
+        a {
+            // color: $blue;
+                &:focus-visible {
+                    outline-offset: -.5rem;
+                }
+        }
+
+        .menu-title {
+            margin-top: 2rem;
+            // background-color: $purple;
+            display: inline-block;
+            line-height: normal;
+            margin-top: 2rem;
+        }
+
+        li {
+            // list-style: url('../img/puce1.png');
+            // list-style: url('../img/puce-star-yellow.svg');
+            margin-left: 3rem;
+        }
+    }
+}

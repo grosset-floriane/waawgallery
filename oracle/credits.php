@@ -15,7 +15,7 @@
     <title>Bibliomancy Oracle / Credits</title>
     <?php echo $head; ?>
 </head>
-<body class="credits">
+<body class="credits work">
 <?php echo $header;?>
     
 
