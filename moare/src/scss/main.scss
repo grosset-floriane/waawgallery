@@ -1,54 +1,63 @@
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
-@import 'animations';
+@import 'helpers/parameters';
+@import 'helpers/fonts';
+@import 'layout/responsive';
+@import 'helpers/animations';
 
-@import 'reset';
-
-
-
-@import 'body/links';
-@import 'body/headings';
-@import 'body/main';
-@import 'body/bodytext';
+// Components
+    // Containers
+    @import 'components/containers/body';
+    @import 'components/containers/footer';
 
 
-@import 'menu/logoletters';
+    // Textual
+    @import 'components/textual/paragraphs';
+    @import 'components/textual/headings';
+    @import 'components/textual/links';
 
-// Menu styles
-@import 'menu/header';
-@import 'menu/button';
-@import 'menu/nav';
-// touch screens nav
-@import 'menu/touchnav/nav';
-@import 'menu/touchnav/button';
+    // Medias
+    @import 'components/medias/waawlogo';
 
-// Logos
-@import 'logos/waawlogo';
-
-// Medias
-@import 'media/images';
-
-// Footer
-@import 'footer/footer';
-
-// Etrance Page 
-@import 'entrancepage/enterbutton';
+    // Dividers
+    @import 'components/dividers/hr';
 
 
-// Opening page 
-// @import 'openingroom/main';
-// @import 'openingroom/form';
-// @import 'openingroom/headings';
-// @import 'openingroom/welcomemessage';
-// @import 'openingroom/textmessage';
-// @import 'openingroom/scrollbar';
-// @import 'openingroom/alert';
-// @import 'openingroom/loader';
-// @import 'openingroom/noscript';
+    // Navigations
+    @import 'components/navigations/enterbutton';
 
-// Instructions
-@import 'instructions/div';
+        // Main nav
+        @import 'components/navigations/mainnav/header';
+        @import 'components/navigations/mainnav/button';
+        @import 'components/navigations/mainnav/nav';
+        @import 'components/navigations/mainnav/logoletters';
+        @import 'components/navigations/mainnav/listelements';
+
+
+        // Touch nav
+        @import 'components/navigations/touchnav/nav';
+        @import 'components/navigations/touchnav/button';
+
+
+// Pages
+    // Info
+    @import 'pages/info/paragraphs';
+
+    // Index
+    @import 'pages/index/body';
+    @import 'pages/index/main';
+    @import 'pages/index/instructions';
+    @import 'pages/index/images';
+
+    // Opening page 
+        // @import 'pages/openingroom/main';
+        // @import 'pages/openingroom/form';
+        // @import 'pages/openingroom/headings';
+        // @import 'pages/openingroom/welcomemessage';
+        // @import 'pages/openingroom/textmessage';
+        // @import 'pages/openingroom/scrollbar';
+        // @import 'pages/openingroom/alert';
+        // @import 'pages/openingroom/loader';
+        // @import 'pages/openingroom/noscript';
+
 
 
 

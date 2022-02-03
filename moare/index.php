@@ -2,8 +2,7 @@
     define('MAGIC', "WAAWamazing");
     $uri = $_SERVER['REQUEST_URI'];
     
-    $cookieInstruction = $_COOKIE['instruction'];
-    if (!isset($cookieInstruction)) {
+    if (!isset($_COOKIE['instruction'])) {
         $coockie = false;
         setcookie('instruction', true, time() + 12600, '/');
 

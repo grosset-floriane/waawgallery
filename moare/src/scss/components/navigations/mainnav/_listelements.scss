@@ -1,0 +1,16 @@
+#waaw-header {
+    li {
+        font-size: 2.5rem;
+        color: $yellow;
+        margin-bottom: 2rem;
+
+        @include desktop {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: $red;
+            
+        }
+    }
+}
