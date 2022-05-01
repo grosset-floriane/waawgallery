@@ -59,7 +59,7 @@ class InfoPage extends Page
         return "
         <main id=\"main\">
             <h1 class=\"logo\"><a href=\"/\">$logo</a></h1>
-            <h2>$artworkTitle</h2>
+            <h2 aria-label=\"$artworkTitle\">$artworkTitle</h2>
             $eventDateLine
             $facebookEventLine
             <hr>
