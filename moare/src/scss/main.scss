@@ -13,6 +13,7 @@
     @import 'components/textual/paragraphs';
     @import 'components/textual/headings';
     @import 'components/textual/links';
+    @import 'components/textual/selection';
 
     // Medias
     @import 'components/medias/waawlogo';
@@ -23,6 +24,8 @@
 
     // Navigations
     @import 'components/navigations/enterbutton';
+    @import 'components/navigations/skiptocontent';
+    @import 'components/navigations/scrollbar';
 
         // Main nav
         @import 'components/navigations/mainnav/header';

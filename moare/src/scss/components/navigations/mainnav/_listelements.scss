@@ -10,7 +10,9 @@
 
         a {
             color: $red;
-            
+            &.active {
+                color: $blue !important;
+            }
         }
     }
 }
