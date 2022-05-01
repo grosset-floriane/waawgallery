@@ -1,5 +1,9 @@
 <?php
 
+function str_contains($haystack, $needle) {
+    return $needle !== '' && mb_strpos($haystack, $needle) !== false;
+}
+
 class Page 
 {
     public function getHead($data) {
@@ -163,10 +167,14 @@ class Page
                 $activeInabsence = "class=\"active\"";
                 break;
             case "/waaw-offline/":
-                $activeHome = "class=\"active\"";
+                if(str_contains($url, 'about.php')) {
+                    $activeAbout = "class=\"active\"";
+                } else if ($url === '/') {
+                    $activeHome = "class=\"active\"";
+                }
                 break;
             default:
-                $activeAbout = "class=\"active\"";
+                break;
         }
 
 
@@ -174,7 +182,7 @@ class Page
         $menu = "
             <ul>
                 <li>
-                    <a href=\"/\">
+                    <a href=\"/\" $activeHome>
                         Home
                     </a> 
                 </li>     
