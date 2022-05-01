@@ -1,4 +1,5 @@
 #buttonMenu {
+    cursor: pointer;
     // font-style
     font-family: 'Raleway';
     font-size: $font-size-large;
@@ -7,6 +8,7 @@
     // block styles
     padding: .4rem 0;
     margin-bottom: 0;
+    margin-right: 2.5rem;
 
     // positions
     position: relative;

@@ -1,0 +1,12 @@
+.sitemap {
+    margin-top: $spacing-triple;
+    font-size: $font-size-base;
+    line-height: 2.5rem;
+    li:last-child, & > ul > li:nth-child(2) {
+        margin-bottom: $spacing-double;
+    }
+
+    & > ul > li > ul > li {
+        margin-left: $spacing-single;
+    } 
+}

@@ -5,6 +5,7 @@ button {
     touch-action: manipulation;
 
     &:focus-visible {
-        @extend a:focus-visible
+        outline: .1rem black solid;
+        outline-offset: .2rem;
     }
 }
