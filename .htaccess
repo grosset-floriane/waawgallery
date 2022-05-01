@@ -1,0 +1,24 @@
+# Specific error pages
+ErrorDocument 404 /errors/notfound.php
+ErrorDocument 403 /errors/forbidden.php
+ErrorDocument 500 /errors/internalerror.php
+
+# Default error pages
+ErrorDocument 400 /errors/defaulterror.php
+ErrorDocument 401 /errors/defaulterror.php
+ErrorDocument 405 /errors/defaulterror.php
+ErrorDocument 406 /errors/defaulterror.php
+ErrorDocument 407 /errors/defaulterror.php
+ErrorDocument 408 /errors/defaulterror.php
+ErrorDocument 409 /errors/defaulterror.php
+ErrorDocument 410 /errors/defaulterror.php
+ErrorDocument 411 /errors/defaulterror.php
+ErrorDocument 412 /errors/defaulterror.php
+ErrorDocument 413 /errors/defaulterror.php
+ErrorDocument 414 /errors/defaulterror.php
+ErrorDocument 415 /errors/defaulterror.php
+ErrorDocument 501 /errors/defaulterror.php
+ErrorDocument 502 /errors/defaulterror.php
+ErrorDocument 503 /errors/defaulterror.php
+ErrorDocument 504 /errors/defaulterror.php
+ErrorDocument 505 /errors/defaulterror.php
