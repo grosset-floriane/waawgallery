@@ -130,7 +130,7 @@ if($conn->connect_error) {
 
     <main id="main">
         <div id="loading-bar"></div>
-        <button onclick="start(videoArray, soundArray, textArray);" id="start-button">START</button>
+        <button onclick="start(videoArray, soundArray, textArray);" id="start-button" aria-label="Press to start the artwork">START</button>
 
    
     
