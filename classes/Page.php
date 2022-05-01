@@ -227,18 +227,18 @@ return "
                         Home
                     </a> 
                 </li>     
-                <li><a href=\"/about.php\" $activeAbout>
-                        About the 
-                        <span class=\"firstW logoletters\">W</span>
-                        <span class=\"rotatedW logoletters\">W</span>
-                        <span class=\"lastW logoletters\">W</span> 
-                        gallery
+                <li><a href=\"/about.php\" $activeAbout aria-label=\"About the waaw gallery\">
+                        <span aria-hidden=\"true\" focusable=\"false\">About the 
+                            <span class=\"firstW logoletters\">W</span>
+                            <span class=\"rotatedW logoletters\">W</span>
+                            <span class=\"lastW logoletters\">W</span> 
+                       gallery</span>
                     </a>
                 </li>
                 <li><span class=\"menu-title\">Virtual Room:</span>
                     <ul>
                         <li>
-                            <a href=\"/virtualroom/indoors/info.php\" $activeIndoors>
+                            <a href=\"/virtualroom/indoors/info.php\" $activeIndoors aria-label=\"Indoors Lola Jacrot & Fleur Delaville\">
                                 Indoors // Lola Jacrot & Floriane Grosset 
                             </a>
                         </li>
@@ -248,21 +248,21 @@ return "
                     <ul>
                         <li>
                             <a href=\"/augur-and-dragon-bones/info.php\" $activeAugur>
-                                Augur & Dragon Bones // Sandy Kalydjian
+                                Augur & Dragon Bones // Sandy Kalaydjian
                             </a>
                         </li>
                         <li>
-                            <a href=\"/moare/info.php\" $activeMoare>
+                            <a href=\"/moare/info.php\" $activeMoare aria-label=\"moiré Seren Krag\">
                                 Moare // Soren Krag
                             </a>
                         </li>
                         <li>
-                            <a href=\"/oracle/info.php\" $activeOracle>
+                            <a href=\"/oracle/info.php\" $activeOracle aria-label=\"Bibliomancy Oracle Lucila Mayol\">
                                 Bibliomancy Oracle // Lucila Mayol
                             </a>
                         </li>
                         <li>
-                            <a href=\"/inabsence/info.php\" $activeInabsence>
+                            <a href=\"/inabsence/info.php\" $activeInabsence aria-label=\"Inabsence Emilie Wright\">
                                 Inabsence // Emilie Wright
                             </a>
                         </li>
