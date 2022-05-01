@@ -5,7 +5,7 @@
     $newPage = new InfoPage("/oracle/", $conn);
     $head = $newPage->getHead($newPage->pageData);
     $header = $newPage->getHeader($newPage->pageData);
-
+    $skipLink = $newPage->getSkipLinkToContent();
 ?>
 
 <!DOCTYPE html>
@@ -16,12 +16,13 @@
     <?php echo $head; ?>
 </head>
 <body class="credits work">
+<?php echo $skipLink;?>
 <?php echo $header;?>
     
 
-    <main>
-        <header>
-            <a href="index.php"><img src="assets/img/bibliomancyTitle2.gif" class="title-oracle" alt="Bibliomancy Oracle blinky title"></a>
+    <main id="main">
+        <header>        
+            <a href="index.php" ><img src="assets/img/bibliomancyTitle2.gif" class="title-oracle" aria-label="Bibliomancy Oracle blinky title - back to main page"></a>
         
         </header>
         
