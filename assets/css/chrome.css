@@ -1,7 +1,0 @@
-button#buttonMenu .logoletters.rotatedW {
-    left: 29px;
-}
-
-button#buttonMenu.toggled .rotatedW {
-    left: 1px;
-}
