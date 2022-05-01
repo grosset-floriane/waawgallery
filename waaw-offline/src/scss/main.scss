@@ -1,7 +1,6 @@
 
 // Helpers
 @import 'helpers/parameters';
-@import 'mixins';
 @import 'layout/responsive';
 
 
@@ -14,6 +13,7 @@
 @import "components/textual/links";
 @import "components/textual/paragraphs";
 @import "components/textual/headings";
+@import "components/textual/selection";
 
 @import "components/dividers/hr";
 
@@ -31,19 +31,11 @@
 @import "pages/info/workbuttons";
 @import "pages/info/sections";
 
-// Medias
-@import 'media/images';
-
-
-// Etrance Page 
-@import 'entrancepage/enterbutton';
-@import 'entrancepage/logo';
-
-
 // About page
-@import 'about/newsletterform';
-@import 'about/nav';
-@import 'about/abstract';
+@import 'pages/about/newsletterform';
+
+// Newsletter pages
+@import 'pages/newsletter/headings';
 
 
 

@@ -1,9 +1,17 @@
 .logo {
     padding-top: $spacing-triple;
     a {
-        background-color: transparent;
-    }
-    path {
-        fill: $color-blue;
+        path {
+            fill: $color-blue;
+        }
+        
+        &:hover {
+            svg {
+                background-color: $color-red;
+                path {
+                    fill: $color-white;
+                }
+            }  
+        }
     }
 }

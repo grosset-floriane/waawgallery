@@ -17,6 +17,14 @@
                 background-color: $color-red;
                 text-decoration: none;
             }
+
+            &.active {
+                color: $color-blue;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-blue;
+                } 
+            }
         }
     }
 }
