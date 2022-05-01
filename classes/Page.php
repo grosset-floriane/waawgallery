@@ -32,6 +32,7 @@ class Page
         <!-- SEO META -->
         <meta name=\"author\" content=\"Floriane Grosset\">
         <meta name=\"robots\" content=\"index, follow\">
+        <meta name=\"description\" content=\"$shortDescription\">
         <meta property=\"og:title\" content=\"$title\" />
         <meta property=\"og:url\" content=\"https://waawgallery.com$artworkFolder\" />
         <meta property=\"og:image\" content=\"$imageUrl\" />
@@ -41,6 +42,7 @@ class Page
         <meta property=\"og:type\" content=\"article\" />
         <meta property=\"og:description\" content=\"$shortDescription\" />
         <meta property=\"og:locale\" content=\"en_US\" />
+        <meta property=\"og:site_name\" content=\"WAAW Gallery\" />
         
         <!-- TWITTER CARDS -->
         <meta name=\"twitter:card\" content=\"summary_large_image\">
@@ -53,8 +55,7 @@ class Page
 
         <!-- FONT -->
         <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin> 
-        <link href=\"https://fonts.googleapis.com/css?family=Raleway&display=swap\" rel=\"stylesheet\">
+        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>    
 
         <!-- GLOBAL STYLESHEET -->
         <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"" . BASE_URL . "/assets/css/main.css\" />
@@ -76,30 +77,31 @@ class Page
             <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\" " . BASE_URL . "/inabsence/assets/css/main.css\" />
     
             <!-- FONTS -->
-             
-            <link href=\"https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap\" rel=\"stylesheet\"> 
+            <link href=\"https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&family=Raleway&display=swap\" rel=\"stylesheet\"> 
                 "; 
                 break;
             case "/oracle/":
                 return "
             <!-- STYLES -->
             <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\" " . BASE_URL . "/oracle/assets/css/main.css\" />
+            <link rel=\"icon\" href=\" " . BASE_URL . "/oracle/assets/img/favicon.png\" type=\"image/x-icon\">
     
             <!-- FONTS -->
-            <link rel=\"icon\" href=\" " . BASE_URL . "/oracle/assets/img/favicon.png\" type=\"image/x-icon\">
+            <link href=\"https://fonts.googleapis.com/css2?family=Raleway&display=swap\" rel=\"stylesheet\"> 
                 ";
                 break;
             case "/moare/":
                 return "
             <!-- STYLES -->
             <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\" " . BASE_URL . "/moare/assets/css/main.css\" />
-     
+            <!-- FONTS -->
+            <link href=\"https://fonts.googleapis.com/css2?family=Raleway&display=swap\" rel=\"stylesheet\"> 
                 ";
                 break;
             case "/virtualroom/indoors/":
                 return "
             <!-- FONTS --> 
-            <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\"> 
+            <link href=\"https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap\" rel=\"stylesheet\"> 
     
             <!-- STYLES -->
             <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\" " . BASE_URL . "/virtualroom/indoors/assets/css/main.css\" />
@@ -109,13 +111,16 @@ class Page
                 return "
             <!-- STYLES -->
             <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"" . BASE_URL . "/augur-and-dragon-bones/assets/css/main.css\" />
+
+            <!-- FONTS -->
+            <link href=\"https://fonts.googleapis.com/css2?family=Raleway&display=swap\" rel=\"stylesheet\"> 
                 ";
             case "/waaw-offline/":
                 return "
                 <!-- STYLES -->
                 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"" . BASE_URL . "/waaw-offline/assets/css/main.css\" />
                 <!-- FONTS --> 
-                <link href=\"https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Raleway:wght@500&display=swap\" rel=\"stylesheet\"> 
+                <link href=\"https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Raleway:wght@400;500&display=swap\" rel=\"stylesheet\"> 
                 ";
             default:
                 return "";
