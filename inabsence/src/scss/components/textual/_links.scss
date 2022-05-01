@@ -3,8 +3,15 @@ a {
     text-decoration: underline;
 
     &:hover {
-        color: white;
-        text-decoration: underline;
+        text-decoration: none;
+    }
+
+}
+
+a, button {
+    &:focus-visible {
+        outline: solid $color .2rem;
+        outline-offset: .4rem;
     }
 }
     

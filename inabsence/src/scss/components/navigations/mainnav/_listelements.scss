@@ -12,6 +12,10 @@
             &:hover {
                 text-decoration: underline;
             }
+
+            &.active {
+                text-decoration: line-through;
+            }
         }
     
         .menu-title {
