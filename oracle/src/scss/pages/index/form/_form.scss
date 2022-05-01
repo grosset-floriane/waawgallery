@@ -1,0 +1,23 @@
+form {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    input {
+        width: calc(100% - 5rem);
+        background-color: transparent;
+        font-family: $font-body;
+        color: $blue;
+        height: 4rem;
+        border: none;
+        padding-left: 1rem;
+        
+
+        &:focus-visible {
+            outline: dashed 2px $yellow;    
+        }
+
+        &::placeholder {
+            color: $blue;
+        }
+    }
+}

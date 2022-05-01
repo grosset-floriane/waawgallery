@@ -1,0 +1,11 @@
+.index, .today, .daydream, .disconnected, .afterworld {
+    main {
+        padding: 1rem;
+        margin-top: 6rem;
+
+        @include desktop {
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    }
+} 

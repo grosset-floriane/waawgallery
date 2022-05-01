@@ -1,0 +1,21 @@
+.buttons {
+    .enter-button {
+        border: solid $yellow .2rem;
+        font-size: 2.2rem;
+        
+        &:hover {
+            border-color: $red;
+        }
+        
+        a {
+            color: inherit;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+
+
+
+

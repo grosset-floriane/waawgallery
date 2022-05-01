@@ -1,0 +1,13 @@
+body.afterworld {
+    background-image: url('../img/afterworld/mobiletabletop.png');
+    background-size: cover;
+
+    @include desktop {
+        background-image: url('../img/afterworld/computertabletop.png');
+        height: 100vh;
+
+        main {
+            margin-top: 0;
+        }
+    }
+}

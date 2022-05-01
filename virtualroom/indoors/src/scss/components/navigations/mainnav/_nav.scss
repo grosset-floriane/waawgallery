@@ -1,0 +1,14 @@
+nav {
+
+    &.open {
+        height: calc(100vh - 2.5rem - 3.5rem);        
+    }
+
+    .logoletters {
+        &.rotatedW {
+            top: .1rem;
+        }
+    }
+}
+
+

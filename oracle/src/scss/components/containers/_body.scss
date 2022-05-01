@@ -1,0 +1,15 @@
+
+body {
+    &.info {
+        background-color: $blue;
+        color: $yellow;
+    }
+
+    &.index {
+        background-color: $turquoise;
+    }
+
+    &.credits {
+        background-color: $purple;
+    } 
+}

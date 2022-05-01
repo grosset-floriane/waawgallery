@@ -1,0 +1,23 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    .enter-button {
+        width: 20rem;
+        margin: auto;
+        margin-top: 3.5rem;
+        
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-base;
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2rem;
+            display: block;
+            width: 100%;
+        }  
+    }
+}

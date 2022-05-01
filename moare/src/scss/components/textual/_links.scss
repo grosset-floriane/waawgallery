@@ -1,0 +1,16 @@
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $red;
+    }
+}
+
+a, button {
+    &:focus-visible {
+        outline: $red .2rem solid;
+        outline-offset: .4rem;
+    }
+}

@@ -1,0 +1,35 @@
+button#buttonMenu {
+    cursor: pointer;
+    color: $muted-color;
+    &.toggled {
+        color: $color;
+    }
+
+    // icon Info
+    #info-icon {
+        path {
+            fill: $muted-color;
+        }
+    }
+    
+    // toggled -> info-icon
+    &.toggled {
+        #info-icon {
+
+            path {
+                fill: $color;
+            }
+        }
+    }
+    
+    // toggled -> letters of the logo
+    &.toggled {
+        .firstW {
+            color: $color;
+        }
+    }
+}
+
+
+
+

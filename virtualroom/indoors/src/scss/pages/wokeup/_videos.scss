@@ -1,0 +1,10 @@
+.videos .video {
+    &#lola.wokeup {
+        margin: auto;
+        margin-top: 7rem;
+        @include desktop {
+            margin-top: 18rem;
+        }
+        
+    }
+}

@@ -1,0 +1,14 @@
+#waaw-header nav {
+    font-family: 'Constantia', serif;
+    
+
+    &.open {
+        max-height: calc(100vh - 3.5rem - 3.5rem);
+        padding-bottom: 3.5rem;
+        
+    }
+  
+}
+
+
+

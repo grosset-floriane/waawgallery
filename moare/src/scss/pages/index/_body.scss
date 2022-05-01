@@ -1,0 +1,13 @@
+body.index {
+        background-image: url('../img/726/main_screen_01_726.png');
+        background-position: top left;
+        background-size: auto;
+        background-color: #fff200;
+
+        @media (min-width: 727px) {background-image: url('../img/968/main_screen_01_968.png');}
+        @media (min-width: 969px) {background-image: url('../img/1210/main_screen_01_1210.png');}
+        @media (min-width: 1210px) {background-image: url('../img/1452/main_screen_01_1452.png');}
+        @media (min-width: 1453px) {background-image: url('../img/1815/main_screen_01_1815.png');}
+        @media (min-width: 1816px) {background-image: url('../img/2420/main_screen_01_2420.png');}
+        @media (min-width: 2421px) {background-image: url('../img/3025/main_screen_01_3025.png');}
+}   

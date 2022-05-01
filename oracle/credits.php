@@ -1,5 +1,11 @@
 <?php
     define('MAGIC', "WAAWamazing");
+    require  "../classes/InfoPage.php";
+
+    $newPage = new InfoPage("/oracle/", $conn);
+    $head = $newPage->getHead($newPage->pageData);
+    $header = $newPage->getHeader($newPage->pageData);
+    $skipLink = $newPage->getSkipLinkToContent();
 ?>
 
 <!DOCTYPE html>
@@ -7,18 +13,16 @@
 <head>
     
     <title>Bibliomancy Oracle / Credits</title>
-    <!-- <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
-    <script src="../assets/js/menu.js"></script> -->
-    <?php include 'inc/head.php';?>
+    <?php echo $head; ?>
 </head>
-<body class="credits">
-<?php include '../inc/header.php'; ?>
+<body class="credits work">
+<?php echo $skipLink;?>
+<?php echo $header;?>
     
 
-    <main>
-        <header>
-            <a href="index.php"><img src="assets/img/bibliomancyTitle2.gif" class="title-oracle" alt="Bibliomancy Oracle blinky title"></a>
+    <main id="main">
+        <header>        
+            <a href="index.php" ><img src="assets/img/bibliomancyTitle2.gif" class="title-oracle" aria-label="Bibliomancy Oracle blinky title - back to main page"></a>
         
         </header>
         

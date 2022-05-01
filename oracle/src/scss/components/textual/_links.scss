@@ -1,0 +1,16 @@
+a {
+    color: $green;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+a, button {
+    &:focus-visible {
+        outline: .2rem dashed $yellow;
+        outline-offset: .2rem;
+    }
+}
+

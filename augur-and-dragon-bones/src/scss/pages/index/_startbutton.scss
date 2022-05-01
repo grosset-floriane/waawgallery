@@ -1,0 +1,17 @@
+#start-button {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-image: url('../img/play.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    &:focus-visible {
+        background: url('../img/play.png'), rgb(160,193,212);
+        background: url('../img/play.png') no-repeat center center, radial-gradient(circle, rgba(160,193,212,1) 0%, rgba(0,0,0,1) 81%);
+    }
+}

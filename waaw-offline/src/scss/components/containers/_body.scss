@@ -1,0 +1,32 @@
+body {
+    font-family: $font-body;
+    background-image: url('../img/waaw-offline-background-651.jpg');
+    background-color: $color-blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: calc(50vh - 10rem);
+    padding-bottom: 50vh;
+
+    @include tinyMobile {
+        background-image: url('../img/waaw-offline-background-355.jpg');
+    }
+
+    @include tablet {
+        background-image: url('../img/waaw-offline-background-1025.jpg');
+
+    }
+
+    @include desktop {
+        background-image: url('../img/waaw-offline-background-1600.jpg');
+        padding-top: 0;
+        padding-bottom: calc(100vh - 18.1rem );  
+    }
+
+    @include largeDesktop {
+        background-image: url('../img/waaw-offline-background-large.jpg');
+
+    }
+    
+}

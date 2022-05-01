@@ -1,0 +1,23 @@
+.afterworld .device {
+    #mobile-menu {
+        width: 28.8rem;
+        height: 36.1rem;
+        overflow-y: scroll;
+        position: relative;
+        top: -.1rem;
+        background-color: white;
+        .menu-question {
+            display: flex;
+            align-items: center;
+
+            .right-arrow {
+                width: 2.5rem;
+                height: 2.7rem;
+                
+                margin: 1rem;
+                margin-left: auto;
+                padding-left: 1rem;
+            }
+        }
+    }
+}

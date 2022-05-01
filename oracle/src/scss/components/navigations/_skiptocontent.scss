@@ -1,0 +1,9 @@
+.skip-to-content-link {
+    a:focus {
+        background-color: $purple;
+        border: .2rem dashed $yellow;
+        color: $yellow;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}

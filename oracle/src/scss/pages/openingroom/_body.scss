@@ -1,0 +1,7 @@
+body.opening {
+    background-color: $blue;
+    animation-name: blinkBackground;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transition: ease background-color 1s;
+}

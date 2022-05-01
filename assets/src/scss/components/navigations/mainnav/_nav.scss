@@ -1,0 +1,12 @@
+#waaw-header nav {
+    display: none;
+    &.open {
+        display: block;
+        overflow-y: auto;
+        height: calc(100vh - 7rem);
+        padding-bottom: 5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+

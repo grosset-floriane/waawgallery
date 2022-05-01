@@ -1,64 +1,41 @@
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
-@import 'animations';
+@import 'helpers/parameters';
+@import 'helpers/fonts';
+@import 'layout/responsive';
 
-@import 'reset';
+// Components
+    // Containers
+    @import 'components/containers/body';
+    // Textuals
+    @import 'components/textual/paragraphs';
+    @import 'components/textual/headings';
+    @import 'components/textual/links';
+    @import 'components/textual/selection';
 
+    // Medias
+    @import 'components/medias/waawlogo';
+    @import 'components/medias/img';
+    @import 'components/medias/video';
 
+    // Navigations
+        // Main Nav
+        @import 'components/navigations/mainnav/header';
+        @import 'components/navigations/mainnav/button';
+        @import 'components/navigations/mainnav/nav';
+        @import 'components/navigations/mainnav/listelements';
+        @import 'components/navigations/mainnav/logoletters';
+    @import 'components/navigations/skiptocontent';
+    @import 'components/navigations/scrollbar';
 
-@import 'body/links';
-@import 'body/headings';
-@import 'body/main';
-@import 'body/blockquotes';
-@import 'body/bodytext';
-@import 'body/startbutton';
-@import 'body/loadingbar';
+// Pages
+    // info
+    @import 'pages/info/artistintro';
+    @import 'pages/info/enterbutton';
 
-@import 'body/form/form';
-@import 'body/form/button';
+    // index
+    @import 'pages/index/main';
+    @import 'pages/index/loadingbar';
+    @import 'pages/index/startbutton';
 
-@import 'menu/logoletters';
-
-// Menu styles
-@import 'menu/header';
-@import 'menu/button';
-@import 'menu/nav';
-// touch screens nav
-@import 'menu/touchnav/nav';
-@import 'menu/touchnav/button';
-
-// Logos
-@import 'logos/waawlogo';
-
-// Medias
-@import 'media/images';
-
-// Footer
-@import 'footer/footer';
-
-// Etrance Page 
-@import 'entrancepage/enterbutton';
-
-// About page
-@import 'logos/sponsors';
-@import 'about/newsletterform';
-@import 'about/nav';
-@import 'about/abstract';
-
-// Opening page 
-@import 'openingroom/main';
-@import 'openingroom/form';
-@import 'openingroom/headings';
-@import 'openingroom/welcomemessage';
-@import 'openingroom/textmessage';
-@import 'openingroom/scrollbar';
-@import 'openingroom/alert';
-@import 'openingroom/loader';
-@import 'openingroom/noscript';
-
-// Instructions
-@import 'instructions/div';
 
 
 

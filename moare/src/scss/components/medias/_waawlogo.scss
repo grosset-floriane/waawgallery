@@ -1,0 +1,11 @@
+.logo {
+    path {
+        fill: $yellow;
+    }
+
+    &:hover {
+        path {
+            fill: $red;
+        }
+    }
+}

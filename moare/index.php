@@ -2,14 +2,21 @@
     define('MAGIC', "WAAWamazing");
     $uri = $_SERVER['REQUEST_URI'];
     
-    $cookieInstruction = $_COOKIE['instruction'];
-    if (!isset($cookieInstruction)) {
+    if (!isset($_COOKIE['instruction'])) {
         $coockie = false;
         setcookie('instruction', true, time() + 12600, '/');
 
     } else {
         $coockie = true;
     }
+
+
+    require  "../classes/InfoPage.php";
+
+    $newPage = new InfoPage("/moare/", $conn);
+    $head = $newPage->getHead($newPage->pageData);
+    $header = $newPage->getHeader($newPage->pageData);
+    $skipLink = $newPage->getSkipLinkToContent();
 ?>
 
 
@@ -22,7 +29,7 @@
     <title>Moare</title>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     
-    <?php include 'inc/head.php';?>
+    <?php echo $head; ?>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     
     <script>
@@ -63,7 +70,8 @@
     </script>
     </head>
 <body class="index" id="index">
-<?php include '../inc/header.php'; ?>
+    <?php echo $skipLink;?>
+    <?php echo $header;?>
 
 <script>
     var pixel = 8;
@@ -311,14 +319,17 @@ function detectKey(e) {
     }
 }
 
-function toggleTouchNav() {
+function toggletouchNavButton() {
     document.getElementById('touch-navigation-list').classList.toggle('open');
     document.getElementById('touch-navigation').classList.toggle('open');
-    document.getElementById('button-menu').classList.toggle('open');
-    if (document.getElementById('button-menu').getAttribute('alt') == 'Show touch navigation') {
-        document.getElementById('button-menu').setAttribute('alt', 'Hide touch navigation');
-    } else if (document.getElementById('button-menu').getAttribute('alt') == 'Hide touch navigation') {
-        document.getElementById('button-menu').setAttribute('alt', 'Show touch navigation');
+    const touchNavButton = document.getElementById('button-menu');
+    touchNavButton.classList.toggle('open');
+    if (touchNavButton.classList.contains('open')) {
+        touchNavButton.ariaLabel = 'Hide touch navigation';
+        touchNavButton.ariaExpanded = 'true';
+    } else {
+        touchNavButton.ariaLabel = 'Show touch navigation';
+        touchNavButton.ariaExpanded = 'false';
     }
     
 }
@@ -357,18 +368,18 @@ function toggleTouchNav() {
     
     ?>
 
-    <main>
+    <main id="main">
         <?php 
             $screen = $_GET['screen'];
-                echo "<img src=\"assets/img/$screen/overlay_01_down_$screen.png\" id=\"down\">
-                <img src=\"assets/img/$screen/overlay_02_up_$screen.png\" id=\"up\">
-                <img src=\"assets/img/$screen/overlay_03_left_$screen.png\" id=\"left\">
-                <img src=\"assets/img/$screen/overlay_04_right_$screen.png\" id=\"right\">";
+                echo "<img aria-hidden=\"true\" focusable=\"false\" src=\"assets/img/$screen/overlay_01_down_$screen.png\" id=\"down\">
+                <img aria-hidden=\"true\" focusable=\"false\" src=\"assets/img/$screen/overlay_02_up_$screen.png\" id=\"up\">
+                <img aria-hidden=\"true\" focusable=\"false\" src=\"assets/img/$screen/overlay_03_left_$screen.png\" id=\"left\">
+                <img aria-hidden=\"true\" focusable=\"false\" src=\"assets/img/$screen/overlay_04_right_$screen.png\" id=\"right\">";
             
         ?>
 
         <nav id="touch-navigation">
-            <button type="button" name="button-menu" id="button-menu" alt="Show touch navigation" aria-label="click to toggle the touch navigation" onclick="toggleTouchNav()">Touch Nav</button>
+            <button type="button" name="button-menu" id="button-menu" aria-label="Open touch navigation" aria-expanded="false" aria-control="touch-navigation-list"  onclick="toggletouchNavButton()">Touch Nav</button>
             <ul id="touch-navigation-list">
                 <li><button type="button" name="button-left"  onclick="goLeft()" id="button-left" aria-label="move pattern 1 to the left" alt="move one pattern to the left">&#8592;</button></li>
                 <li>

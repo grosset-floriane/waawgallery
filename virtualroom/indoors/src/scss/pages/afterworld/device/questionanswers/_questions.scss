@@ -1,0 +1,32 @@
+.afterworld .device .question-answers {
+    .question {
+        padding: 1.5rem;
+
+        @include desktop {
+            position: absolute;
+            width: 60.2rem;
+            right: 0;
+            height: 21.1rem;
+        }
+
+        @include largedesktop {
+            height: 28.3rem;
+        }
+ 
+        p {
+            width: 75%;
+            margin: 0;
+            margin-left: auto;
+            background-color: $bluemessenger;
+            border-radius: 1.5rem;
+            padding: 1rem;
+            text-align: left;
+
+            @include desktop {
+                width: 45%;
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+}

@@ -1,10 +1,20 @@
 <?php
-    define('MAGIC', "WAAWamazing");
-    
+define('MAGIC', "WAAWamazing");
+require  "../classes/InfoPage.php";
+
+$newPage = new InfoPage("/oracle/", $conn);
+$head = $newPage->getHead($newPage->pageData);
+$header = $newPage->getHeader($newPage->pageData);
+$skipLink = $newPage->getSkipLinkToContent();
 ?>
 
 <?php
-if ($_POST['submit'] == "Ask" && strpos($_POST['question'], '?') && $_POST['question'] != $_POST['previous']) {
+$err = "";
+$message = "";
+$question = "";
+$answer = "";
+$submit = "";
+if (isset($_POST['submit']) && $_POST['submit'] == "Ask" && strpos($_POST['question'], '?') && $_POST['question'] != $_POST['previous']) {
     $question = $_POST['question'];
     $question = strip_tags($question);
     
@@ -31,9 +41,9 @@ $bookTitle, $author
     fwrite($myfile, $txt);
     fclose($myfile);
 
-} elseif ($_POST['submit'] == "Ask" && strpos($_POST['question'], '?') && $_POST['question'] == $_POST['previous']) {
+} elseif (isset($_POST['submit']) && $_POST['submit'] == "Ask" && strpos($_POST['question'], '?') && $_POST['question'] == $_POST['previous']) {
     $message = "<p class=\"message\">Please enter a different question.</p>";
-} elseif ($_POST['submit'] == "Ask") {
+} elseif (isset($_POST['submit']) && $_POST['submit'] == "Ask") {
     $message = "<p class=\"message\">Please enter a question below to get an answer (don't forget the question mark).</p>";
     $question = $_POST['question'];
 }
@@ -43,22 +53,20 @@ $bookTitle, $author
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>Bibliomancy Oracle</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
-    <script src="../assets/js/menu.js"></script> -->
-    <?php include 'inc/head.php';?>
-    </head>
-<body class="index">
-<?php include '../inc/header.php'; 
-echo $err;
-?>
+    <title>Bibliomancy Oracle // Lucila Mayol</title>
+    <?php echo $head; ?>
+</head>
+<body class="index work">
+    <?php echo $skipLink;?>
+    <?php echo $header;
+    echo $err;
+    ?>
     
 
-    <main>
+    <main id="main">
         <header>
             <img src="assets/img/bibliomancyTitle.gif" class="title-oracle" id="title" alt="Bibliomancy Oracle blinky title">
-            <a href="credits.php"><img src="assets/img/logo1.gif" class="logo-oracle" alt="Open book with glittered eye"></a>
+            <a href="credits.php"><img src="assets/img/logo1.gif" class="logo-oracle" aria-label="Open book with glittered eye - go to credits page"></a>
         </header>
         <?php 
                 if ($message) {

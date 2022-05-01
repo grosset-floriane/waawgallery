@@ -1,0 +1,36 @@
+#waaw-header {
+    li {
+        text-align: left;
+        line-height: 3.75rem;
+        font-size: $font-size-large;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+
+        li {
+            margin-left: 2rem;
+        }
+    }
+
+
+
+    nav .logoletters {
+        &.firstW {
+            left: .5rem;
+        }
+
+        &.rotatedW {
+            top: .2rem;
+            left: .2rem;
+            line-height: 1;
+            padding-top: .2rem;
+        }
+
+        &.lastW {
+            left: -.4rem;
+            line-height: 1;
+            padding-top: .2rem;
+        }
+    }
+
+}

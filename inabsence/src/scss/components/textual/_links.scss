@@ -1,0 +1,17 @@
+a {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+a, button {
+    &:focus-visible {
+        outline: solid $color .2rem;
+        outline-offset: .4rem;
+    }
+}
+    

@@ -1,0 +1,28 @@
+button#buttonMenu {
+    color: $color-blue;
+
+    // icon Info
+    #info-icon {
+        path {
+            fill: $color-blue;
+        } 
+    }
+
+    // toggled -> info-icon
+    &.toggled {
+        #info-icon {
+            path {
+                fill: $color-red;
+            }
+        }
+    }
+
+    // toggled -> letters of the logo
+    &.toggled {
+        .firstW, .rotatedW, .lastW {
+            color: $color-red;
+        }
+    }
+
+
+}

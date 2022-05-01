@@ -1,0 +1,25 @@
+.afterworld .device form {
+    button {
+        background-color: white;
+        padding-left: .7rem;
+        position: relative;
+        top: -.5rem;
+
+        @include desktop {
+            position: initial;
+            padding-bottom: 0;
+            margin-bottom: .5rem;
+            background-color: transparent !important;
+        }
+
+        &:focus-visible {
+            outline: .3rem solid $bluemessenger;
+            outline-offset: .2rem;
+            -moz-outline-radius: 50%;
+        }
+
+        img {
+            width: 2rem;
+        }
+    }
+}

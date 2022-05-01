@@ -1,0 +1,48 @@
+//** MAIN NAV COLORS: CREDITS PAGE **//
+
+.credits {
+    header#waaw-header.open {
+        background-color: $purple;
+        border: .2rem dashed $turquoise;
+
+        button#buttonMenu {
+            color: $green;
+
+            #info-icon {
+                path {
+                    fill: $green;
+                }  
+            }
+
+            &.toggled {
+                color: $yellow;
+
+                .firstW {
+                    color: $yellow;
+                } 
+
+                #info-icon {
+                    path {
+                        fill: $yellow;
+                    }
+                }
+            }
+        }
+
+
+        li {
+            color: $purple;
+            a {
+                color: $yellow;
+            }
+    
+            .menu-title {
+                background-color: $turquoise;
+            }
+    
+            li {
+                list-style: url('../img/puce-star-turquoise.svg');
+            }
+        }
+    }
+}

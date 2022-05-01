@@ -1,0 +1,6 @@
+footer {
+    @extend main ;
+    padding-top: $spacing-quadriple !important;
+    border-bottom: $thick-border;
+    border-top: none;
+}

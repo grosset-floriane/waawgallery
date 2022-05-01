@@ -1,0 +1,19 @@
+img.image {
+    position: absolute;
+}
+
+img.flower {
+    width: 25%;
+    max-width: 60rem;
+    right: 0;
+    top:10rem;
+}
+
+img.curtain {
+    width: 100%;
+    max-width: 120rem;
+    bottom: 2rem;
+    left: -50%;
+    top: 45%;
+    z-index: -1;
+}

@@ -1,0 +1,45 @@
+blockquote {
+    margin: 5rem auto;
+    color: $purple;
+    max-width: 60rem;
+
+    p:first-child {
+        display: flex;
+        width: fit-content;
+        margin: auto;
+        font-weight: bold;
+        font-size: 2.2rem;
+        
+
+        &::before, &::after {
+            display: block;
+            font-size: 4.8rem;
+            
+            position: relative;
+        }
+        
+        &::before {
+            content: "“";
+            top: -.9rem;
+            padding-right: 2rem;
+        }
+
+        &::after {
+            content: "„";
+            top: -3.4rem;
+            padding-left: 2rem;
+            
+        }
+    }
+
+
+    p:last-child {
+        margin-top: 3rem;
+        text-align: right;
+        font-size: 1.5rem;
+
+        .title {
+            font-style: italic;
+        }
+    }
+}

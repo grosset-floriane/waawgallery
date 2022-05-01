@@ -1,0 +1,17 @@
+.afterworld .device header { 
+    p.breadcrumbs {
+        @include desktop {
+            color: black;
+            margin: 0;
+            font-size: .9rem;
+            position: relative;
+            top: -1rem;
+            left: 6rem;
+        }
+
+        @include largedesktop {
+            top: -.5rem;
+            left: 8rem;
+        }
+    }
+}

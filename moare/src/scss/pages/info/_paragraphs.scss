@@ -1,0 +1,15 @@
+.artwork-intro p {
+    color: $red;
+
+    &:hover, &:focus-visible {
+        color: $yellow;
+    }
+}
+
+.artist-bio p {
+    color: $blue;
+
+    &:hover, &:focus-visible {
+        color: $yellow;
+    }
+}

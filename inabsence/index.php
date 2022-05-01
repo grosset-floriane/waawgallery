@@ -10,6 +10,9 @@ if($conn->connect_error) {
     die ($conn->connect_error);
 }
 
+$secondPart = "";
+$firstPart = "";
+
 // // CHECK IF THERE IS ALREADY SOMEONE USING THE MASTER PAGE
 // Get the current nb in the master file
 $queryCurrentId = "SELECT * FROM emilie_currentid";
@@ -123,131 +126,137 @@ if ($nextId > $numRows) {
     $nextId = 1;
 }
 
+require "../classes/InfoPage.php";
+
+$newPage = new InfoPage("/inabsence/", $conn);
+$head = $newPage->getHead($newPage->pageData);
+$header = $newPage->getHeader($newPage->pageData);
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Inabsence / Emilie Wright</title>
-    <?php include 'inc/head.php'; ?>
+    <title>Inabsence / Emilie Wright</title>
+    <?php echo $head; ?>    
     
 
 
-<script>
+    <script>
 
-var nextId = <?php echo $nextId; ?>;
-// Reset variables
+        var nextId = <?php echo $nextId; ?>;
+        // Reset variables
 
-var n=nextId; // nb in the number of 
-var numRows =<?php echo $numRows; ?>;
-
-
-var currentTime = Date.now();
-var waitingTime = (<?php echo $lastTime; ?> + 10000 - currentTime) - 500; // time to wait in millisecond
-
-// Do nothing function (wait)
-function waitAndDo() {
-    do_line();
-    setInterval(do_line, 10000);
-}
+        var n=nextId; // nb in the number of 
+        var numRows =<?php echo $numRows; ?>;
 
 
-// function to repeat action
-function poem() 
-{
+        var currentTime = Date.now();
+        var waitingTime = (<?php echo $lastTime; ?> + 10000 - currentTime) - 500; // time to wait in millisecond
 
-window.scrollTo(0, document.body.scrollHeight);
-
-setTimeout(waitAndDo, waitingTime);
-
-
-}
-
-// function to create the final line
-function do_line() {
-var main=document.getElementById('main');
- 
-
-     // remove one line
-main.removeChild(main.firstChild);
+        // Do nothing function (wait)
+        function waitAndDo() {
+            do_line();
+            setInterval(do_line, 10000);
+        }
 
 
- var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                window.numRows = this.responseText;   
-            }
-        };
-        xmlhttp.open("GET", "synchroNumRows.php", true);
-        xmlhttp.send();
-     
+        // function to repeat action
+        function poem() 
+        {
 
-    // If n==0
-    if (n === 0) {
-        text = '';
-        last=document.createElement('div');
-        // add the created text to the last div created
-        last.appendChild(document.createTextNode(text));
-        // place the new div in the main element
-        main.appendChild(last);
-        n+= 1;
-    } else if (n <= numRows) {
-        // if n <= totalnumrows
-        // get the corresponding sentence
+        window.scrollTo(0, document.body.scrollHeight);
+
+        setTimeout(waitAndDo, waitingTime);
+
+
+        }
+
+        // function to create the final line
+        function do_line() {
+        var main=document.getElementById('main');
+        
+
+            // remove one line
+        main.removeChild(main.firstChild);
+
+
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                text = this.responseText;
-                // separate informations
-                var array = text.split("\\");
-                // get text
-                text = array[1];
-                // get alignment
-                var align = array[0];
-                // create a new div 
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        window.numRows = this.responseText;   
+                    }
+                };
+                xmlhttp.open("GET", "synchroNumRows.php", true);
+                xmlhttp.send();
+            
+
+            // If n==0
+            if (n === 0) {
+                text = '';
                 last=document.createElement('div');
                 // add the created text to the last div created
-                if (text == "<br>") {
-                    text = "";
-                }
                 last.appendChild(document.createTextNode(text));
-                // add alignment as a class to the div
-                last.classList.add(align);
-                if (text == "") {
-                    var classEmpty = "empty";
-                    last.classList.add(classEmpty);
-                }
                 // place the new div in the main element
                 main.appendChild(last);
-                window.scrollTo(0, document.body.scrollHeight);
+                n+= 1;
+            } else if (n <= numRows) {
+                // if n <= totalnumrows
+                // get the corresponding sentence
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        text = this.responseText;
+                        // separate informations
+                        var array = text.split("\\");
+                        // get text
+                        text = array[1];
+                        // get alignment
+                        var align = array[0];
+                        // create a new div 
+                        last=document.createElement('div');
+                        // add the created text to the last div created
+                        if (text == "<br>") {
+                            text = "";
+                        }
+                        last.appendChild(document.createTextNode(text));
+                        // add alignment as a class to the div
+                        last.classList.add(align);
+                        if (text == "") {
+                            var classEmpty = "empty";
+                            last.classList.add(classEmpty);
+                        }
+                        // place the new div in the main element
+                        main.appendChild(last);
+                        window.scrollTo(0, document.body.scrollHeight);
+                    }
+                };
+                xmlhttp.open("GET", "accessdatabase.php?x=" + n, true);
+                xmlhttp.send(); 
+
+                
+
+                if (n < numRows){
+                    // if n is not yet the number of rows, add one
+                    n+=1;
+                } else {
+                    // if n is the number of rows, back to the first sentence
+                    n=1;
+                }
+
             }
-        };
-        xmlhttp.open("GET", "accessdatabase.php?x=" + n, true);
-        xmlhttp.send(); 
+
 
         
 
-        if (n < numRows){
-            // if n is not yet the number of rows, add one
-            n+=1;
-        } else {
-            // if n is the number of rows, back to the first sentence
-            n=1;
+
         }
 
-    }
-
-
- 
-
-
-}
-
-</script>
+    </script>
 </head>
 
-<body onLoad="poem()">
-    <?php include '../inc/header.php'; ?>
+<body class="index" onLoad="poem()">
+    <?php echo $header;?>
     <main id="main">
 
         <?php echo $firstPart . $secondPart . $thirdPart; ?>

@@ -1,0 +1,27 @@
+.institutions-logos {
+    display: flex;
+    justify-content: center;
+    column-gap: $spacing-mobile;
+    align-items: stretch;
+    margin: $spacing-triple 0;
+
+    @include tablet {
+        column-gap: $spacing-tablet;
+    }
+
+    li {
+        width: 30%;
+        max-width: 14rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background-color: transparent;      
+            }
+        }
+    }
+}

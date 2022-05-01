@@ -1,0 +1,24 @@
+.buttons {
+    margin-bottom: 4.8rem;
+    .enter-button {
+        margin-top: 4.8rem;
+        border: dashed $green .2rem;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+        
+    
+        a {
+            color: inherit;
+            font-size: 150%;
+            font-weight: normal;
+            &:focus-visible {
+                outline-offset: .6rem;
+            }
+        }
+    }
+}
+
+
+
+

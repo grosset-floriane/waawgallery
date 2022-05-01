@@ -1,0 +1,13 @@
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.63);
+    opacity: .75; 
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: $color-blue;
+    border: .4rem solid rgba(0, 0, 0, 0.63); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $color-blue;
+}

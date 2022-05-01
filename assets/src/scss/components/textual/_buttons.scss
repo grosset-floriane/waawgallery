@@ -1,0 +1,11 @@
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    touch-action: manipulation;
+
+    &:focus-visible {
+        outline: .1rem black solid;
+        outline-offset: .2rem;
+    }
+}

@@ -51,8 +51,8 @@ class AugurAndDragonBones extends AccessData
             }
         }
 
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Headers: *");
+        // header("Access-Control-Allow-Origin: *");
+        // header("Access-Control-Allow-Headers: *");
         header('Content-Type: application/json');
     
         echo json_encode($augurData);

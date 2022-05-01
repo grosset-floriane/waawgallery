@@ -1,35 +1,40 @@
-@import 'variables';
+@import 'helpers/parameters';
 
-@import 'reset';
+// Components
 
-@import 'body/links';
+    // Containers
+    @import 'components/containers/body';
 
-@import 'menu/logoletters';
+    //  Textual
+    @import 'components/textual/paragraphs';
+    @import 'components/textual/headings';
+    @import 'components/textual/links';
+    @import 'components/textual/selection';
 
-// Menu styles
-@import 'menu/header';
-@import 'menu/button';
-@import 'menu/nav';
+    // Navigations
+    @import 'components/navigations/enterbutton';
+    @import 'components/navigations/skiptocontent';
+    @import 'components/navigations/scrollbar';
 
-// Body 
-@import 'body/main';
-@import 'body/bodytext';
-@import 'body/headings';
-@import 'body/links';
-
-// Footer
-@import 'footer/footer';
-
-// Logos
-@import 'logos/waawlogo';
-
-// About page
-@import 'logos/sponsors';
-@import 'about/newsletterform';
-
-// Entrance Page 
-@import 'entrancepage/enterbutton';
-@import 'entrancepage/text';
+        // Main Nav
+        @import 'components/navigations/mainnav/button';
+        @import 'components/navigations/mainnav/header';
+        @import 'components/navigations/mainnav/listelements';
 
 
+    // Media 
+    @import 'components/media/waawlogo';
+
+
+
+    
+
+// Pages
+
+    // Index
+    @import 'pages/index/text';
+    @import 'pages/index/main';
+
+    // About
+    @import 'pages/about/newsletterform';
 

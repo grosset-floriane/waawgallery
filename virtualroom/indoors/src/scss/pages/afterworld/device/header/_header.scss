@@ -1,0 +1,62 @@
+.afterworld .device {
+    header {
+        margin: 0 !important;
+        width: 28.8rem;
+        background-color: white;
+
+        @include desktop {
+            width: 61.3rem;
+            position: relative;
+            background-size: cover;
+            height: 3.3rem;
+            clip-path: initial;
+            left: .6rem;
+            top: .1rem;
+
+            &.background-1 {
+                background-image: url('../img/afterworld/computer-menu1.jpg');
+            }
+
+            &.background-2 {
+                background-image: url('../img/afterworld/computer-menu2.jpg');
+            }
+
+            &.background-3 {
+                background-image: url('../img/afterworld/computer-menu3.jpg');
+            }
+
+            &.background-4 {
+                background-image: url('../img/afterworld/computer-menu4.jpg');
+            }
+
+            &.background-5 {
+                background-image: url('../img/afterworld/computer-menu5.jpg');
+            }
+
+            &.background-plus {
+                background-image: url('../img/afterworld/computer-menu-plus.jpg');
+            }
+        }
+
+        @include largedesktop {
+            width: 77.6rem;
+            height: 4.2rem;
+            left: .2rem;
+            top: .1rem;
+        }
+
+        &::before {
+            content: '';
+            width: 28.8rem;
+            height: 1.6rem;
+            background-image: url('../img/afterworld/mobiletop.png');
+            display: block;
+            background-size: cover ;
+            
+            @include desktop {
+                display: none;
+            }
+
+        }
+    }
+}

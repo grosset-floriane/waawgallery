@@ -1,0 +1,12 @@
+
+body {    
+    header#waaw-header.open {
+        min-width: 50%;
+
+        @include tablet {
+            border-left: $thick-border;
+        }
+        
+    }
+}
+

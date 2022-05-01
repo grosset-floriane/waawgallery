@@ -1,0 +1,28 @@
+#waaw-header {
+    li {
+        font-size: 2.5rem;
+
+        a{
+            &.active::after {
+                content: '';
+                background-image: url('../img/puce-star-yellow.svg');
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-left: .5rem;
+            }
+        }
+
+        .menu-title {
+            margin-top: 2rem;
+            display: inline-block;
+            line-height: normal;
+            margin-top: 2rem;
+        }
+
+        li {
+            margin-left: 3rem;
+        }
+    }
+}

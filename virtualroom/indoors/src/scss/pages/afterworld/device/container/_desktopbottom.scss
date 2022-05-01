@@ -1,0 +1,22 @@
+.afterworld .device {
+    @include desktop {
+        &::after {
+            content: '';
+            display: block;
+            background-image: url(../img/afterworld/computerbottom.png);
+            width: 62.6rem;
+            position: relative;
+            bottom: 1.2rem;
+            height: 1.6rem;
+            background-size: cover;
+        }
+    }
+
+    @include largedesktop {
+        &::after {
+            width: 78rem;
+            bottom: .3rem;
+            height: 2rem;
+            }
+    }
+}
