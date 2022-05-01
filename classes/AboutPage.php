@@ -267,7 +267,7 @@ class AboutPage extends Page
         ";
     }
 
-    public function buildContactPage() {
+    public function buildAboutPage() {
         $head = $this->getHead($this->pageData);
         $skipLink = $this->getSkipLinkToContent();
         $header = $this->getHeader($this->pageData, $this->connection);
