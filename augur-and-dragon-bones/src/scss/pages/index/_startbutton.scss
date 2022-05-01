@@ -10,4 +10,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     
+    &:focus-visible {
+        background: url('../img/play.png'), rgb(160,193,212);
+        background: url('../img/play.png') no-repeat center center, radial-gradient(circle, rgba(160,193,212,1) 0%, rgba(0,0,0,1) 81%);
+    }
 }

@@ -9,6 +9,7 @@
     @import 'components/textual/paragraphs';
     @import 'components/textual/headings';
     @import 'components/textual/links';
+    @import 'components/textual/selection';
 
     // Medias
     @import 'components/medias/waawlogo';
@@ -23,6 +24,7 @@
         @import 'components/navigations/mainnav/listelements';
         @import 'components/navigations/mainnav/logoletters';
     @import 'components/navigations/skiptocontent';
+    @import 'components/navigations/scrollbar';
 
 // Pages
     // info
