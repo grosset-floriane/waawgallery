@@ -5,6 +5,7 @@ require  "../../classes/InfoPage.php";
 $newPage = new InfoPage("/virtualroom/indoors/", $conn);
 $head = $newPage->getHead($newPage->pageData);
 $header = $newPage->getHeader($newPage->pageData);
+$skipLink = $newPage->getSkipLinkToContent();
 
      // connection to the database
      require_once '../../../private/accessWAAW.php';
@@ -21,10 +22,10 @@ $header = $newPage->getHeader($newPage->pageData);
         return(ctype_digit(strval($input)));
     }
 
-
-     isset($_GET['question']) ? $question = $_GET['question'] : $question = "" ;
-        isset($_GET['mob']) ? $mob = $_GET['mob'] : $mob = null;
-     isset($_GET['plus']) ? $plus = $_GET['plus'] : $plus = null;
+    // $question = $_GET['question'];
+    isset($_GET['question']) ? $question = $_GET['question'] : $question = null ;
+    isset($_GET['mob']) ? $mob = $_GET['mob'] : $mob = null;
+    isset($_GET['plus']) ? $plus = $_GET['plus'] : $plus = null;
 
      $uri = $_SERVER['REQUEST_URI'];
 
@@ -118,11 +119,12 @@ $header = $newPage->getHeader($newPage->pageData);
 
 </head>
 <body class="afterworld">
+    <?php echo $skipLink;?>
     <?php echo $header;?>
 
-   <main>
+   <main id="main">
    <header>
-            <h1><img src="assets/img/afterworld/indoorstitle.png" alt="Indoors title" class="title"></h1>
+            <h1><a href="info.php"><img src="assets/img/afterworld/indoorstitle.png" aria-label="Indoors title" class="title"></a></h1>
             <h2>After World</h2>
             <h3>Lola Jacrot &<br> Floriane Grosset</h3>
         </header>
@@ -182,7 +184,7 @@ $header = $newPage->getHeader($newPage->pageData);
                     echo "
                     <header class=\"afterworld\" id=\"header\">
                         <a href=\"?mob=true\">
-                            <img src=\"assets/img/afterworld/arrowleft.png\">
+                            <img src=\"assets/img/afterworld/arrowleft.png\" class=\"question-img img-left-arrow\">
                             <img src=\"assets/img/afterworld/question$question.png\" class=\"question-img img-conversation\">
 
                             <p>Lola & Floriane<br><span class=\"question-number\">Question $question</span></p>
@@ -273,7 +275,7 @@ $header = $newPage->getHeader($newPage->pageData);
                     echo "
                     <header class=\"afterworld\" id=\"header\">
                         <a href=\"?mob=true\">
-                            <img src=\"assets/img/afterworld/arrowleft.png\">
+                            <img src=\"assets/img/afterworld/arrowleft.png\" class=\"question-img img-left-arrow\">
                             <img src=\"assets/img/afterworld/plusimage.png\" class=\"question-img img-conversation\">
 
                             <p>Lola & Floriane<br><span class=\"question-number\">Plus ++</span></p>

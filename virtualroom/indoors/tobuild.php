@@ -5,6 +5,7 @@ require  "../../classes/InfoPage.php";
 $newPage = new InfoPage("/virtualroom/indoors/", $conn);
 $head = $newPage->getHead($newPage->pageData);
 $header = $newPage->getHeader($newPage->pageData);
+$skipLink = $newPage->getSkipLinkToContent();
 ?>
 
 
@@ -17,14 +18,19 @@ $header = $newPage->getHeader($newPage->pageData);
  
 </head>
 <body class="index">
+    <?php echo $skipLink;?>
     <?php echo $header;?>
-
+    
 
     <img src="assets/img/flowerpot.jpg" alt="flower pot in the field" class="flower image">
    
-    <main>
+    <main id="main">
         <header>
-            <h1><img src="assets/img/indoorstitle.png" alt="Indoors title" class="title"></h1>
+            <h1>
+                <a href="info.php">
+                    <img src="assets/img/indoorstitle.png" aria-label="Indoors title" class="title">
+                </a>
+            </h1>
             <h2>Lola Jacrot & Floriane Grosset</h2>
         </header>
         

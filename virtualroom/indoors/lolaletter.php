@@ -5,6 +5,7 @@ require  "../../classes/InfoPage.php";
 $newPage = new InfoPage("/virtualroom/indoors/", $conn);
 $head = $newPage->getHead($newPage->pageData);
 $header = $newPage->getHeader($newPage->pageData);
+$skipLink = $newPage->getSkipLinkToContent();
 ?>
 
 
@@ -19,12 +20,13 @@ $header = $newPage->getHeader($newPage->pageData);
 
 </head>
 <body class="disconnected letter">
+    <?php echo $skipLink;?>
     <?php echo $header;?>
 
    
-    <main>
+    <main id="main">
         <header>
-            <h1>Indoors</h1>
+            <h1><a href="info.php" class="title-link">Indoors</a></h1>
             <h2>DISCONNECTED</h2>
             <h3>Lola Jacrot & Floriane Grosset</h3>
         </header>
