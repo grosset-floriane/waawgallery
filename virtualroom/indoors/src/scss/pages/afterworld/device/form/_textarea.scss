@@ -1,0 +1,34 @@
+.afterworld .device form {
+    textarea {
+        height: 3rem;
+        border-radius: 1.5rem;
+        background-color: $greymessenger;
+        padding-left: 1.5rem;
+        color: black;
+        font-size: 1.7rem;
+        outline: none;
+        border: none;
+        resize: none;
+        width: 23.7rem;
+        padding-top: .5rem;
+        font-family: 'Roboto', sans-serif;
+
+        &:focus-visible {
+            outline: .3rem solid $bluemessenger;
+            outline-offset: .2rem;
+        }
+
+        &::placeholder {
+            padding-left: 0;
+            color: grey;
+            font-style: oblique;                
+        }
+
+        @include desktop {
+            height: 9rem;
+            font-size: 1.7rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+}

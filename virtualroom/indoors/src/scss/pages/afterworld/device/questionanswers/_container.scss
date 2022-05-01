@@ -1,0 +1,63 @@
+.afterworld .device {
+    .question-answers {
+        background-color: white;
+        position: relative;
+        top: -.1rem;
+        height: 35rem;
+        overflow-y: scroll;
+
+        @include desktop {
+            height: 31.8rem;
+            top: -.4rem;
+            clip-path: polygon(1% 1%,99% 1%,100% 97.5%,0% 97.5%); 
+        }
+
+        @include largedesktop {
+            height: 38.8rem;
+            top: -.3rem;
+            clip-path: polygon(0.3% 1%,99.8% 1%,100% 100%,0 100%);
+        }
+
+        // Backgrounds desktop
+        @include desktop {
+            &#plus {    
+                width: 62.5rem;
+                height: 31.8rem;
+
+                @include largedesktop {
+                    width: 77.9rem;
+                    height: 38.8rem;
+                }
+            }
+
+            &#question1 {
+                background-image: url('../img/afterworld/background1.png');
+                background-size: cover;
+                background-position: bottom;
+            }
+
+            &#question2 {
+                background-image: url('../img/afterworld/background2.png');
+                background-size: cover;
+            }
+
+            &#question3 {
+                background-image: url('../img/afterworld/background3.png');
+                background-size: cover;
+                background-position: bottom;
+            }
+
+            &#question4 {
+                background-image: url('../img/afterworld/background4.png');
+                background-size: cover;
+                background-position: bottom;
+            }
+
+            &#question5 {
+                background-image: url('../img/afterworld/background5.png');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}

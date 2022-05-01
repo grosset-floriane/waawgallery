@@ -1,0 +1,9 @@
+.afterworld {
+    @include desktop {
+
+        /* Handle */
+      ::-webkit-scrollbar-thumb {
+          background: $bluemessenger;
+      }
+  }
+}

@@ -1,0 +1,11 @@
+@include desktop {
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.438);
+    }
+
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $beige;
+    }
+}

@@ -1,0 +1,13 @@
+.afterworld .device .question-answers {
+    p.answer-received {
+        position: relative;
+        margin-top: 2rem;
+        background: blanchedalmond;
+
+        @include desktop {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+    }
+}

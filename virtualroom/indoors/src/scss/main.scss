@@ -1,43 +1,112 @@
-@import 'variables';
-@import 'mixins';
+@import 'helpers/parameters';
+@import 'layout/responsive';
 
-@import 'reset';
+// Components
+    // Containers
+    @import 'components/containers/body';
+    @import 'components/containers/main';
+
+    // Textual
+    @import 'components/textual/paragraphs';
+    @import 'components/textual/links';
+    @import 'components/textual/headings';
+    @import 'components/textual/selection';
+
+    // Media
+    @import 'components/media/waawlogo';
+    @import 'components/media/indoorslogo';
+    @import 'components/media/gallery';
+    @import 'components/media/videos';
+
+    // Dividers
+    @import 'components/dividers/hr';
 
 
+    // Navigations
+    @import 'components/navigations/skipcontent';
+    @import 'components/navigations/scrollbars';
 
-@import 'body/links';
-@import 'body/main';
-@import 'body/bodytext';
+        // Main nav
+        @import 'components/navigations/mainnav/header';
+        @import 'components/navigations/mainnav/button';
+        @import 'components/navigations/mainnav/nav';
+        @import 'components/navigations/mainnav/listelements';
 
 
+// Pages
+
+    // Info
+    @import 'pages/info/main';
+    @import 'pages/info/paragraphs';
+    @import 'pages/info/navigation';
 
 
+    // To build
+    @import 'pages/tobuild/images';
+    @import 'pages/tobuild/videos';
+    
+    // Disconnected
+    @import 'pages/disconnected/body';
+    @import 'pages/disconnected/sections';
+    @import 'pages/disconnected/headings';
+    @import 'pages/disconnected/links';
+    @import 'pages/disconnected/fotorama';
+    @import 'pages/disconnected/images';
 
-// Menu styles
-@import 'menu/header';
-@import 'menu/button';
-@import 'menu/nav';
-@import 'menu/logoletters';
+    // Daydream
+    @import 'pages/daydream/body';
+    @import 'pages/daydream/headings';
+    @import 'pages/daydream/iframe';
+    @import 'pages/daydream/videos';
 
-// Logos
-@import 'logos/waawlogo';
+    // Woke Up
+    @import 'pages/wokeup/body';
+    @import 'pages/wokeup/headings';
+    @import 'pages/wokeup/gallery';
+    @import 'pages/wokeup/images';
+    @import 'pages/wokeup/videos';
 
-// Medias
-@import 'media/images';
-@import 'media/videos';
-@import 'media/iframe';
-@import 'media/fotorama';
+    // Afterworld
+    @import 'pages/afterworld/body';
+    @import 'pages/afterworld/headings';
+    @import 'pages/afterworld/links';
+    @import 'pages/afterworld/scrollbar';
+        // Device
+        @import 'pages/afterworld/device/mobilenavigation';
+        @import 'pages/afterworld/device/images';
 
-// Footer
-@import 'footer/footer';
 
-// pages
-@import 'pages/info';
-@import 'pages/daydream';
-@import 'pages/today';
-@import 'pages/disconnected';
-@import 'pages/afterworld';
+            // Container
+            @import 'pages/afterworld/device/container/mobile';
+            @import 'pages/afterworld/device/container/desktop';
+            @import 'pages/afterworld/device/container/desktopbottom';
 
+            // Header
+            // @import 'pages/afterworld/device/header/mobile';
+            // @import 'pages/afterworld/device/header/desktop';
+            @import 'pages/afterworld/device/header/header';
+            @import 'pages/afterworld/device/header/headings';
+            @import 'pages/afterworld/device/header/links';
+            @import 'pages/afterworld/device/header/nav';
+            @import 'pages/afterworld/device/header/breadcrumbs';
+
+            // Form
+            // @import 'pages/afterworld/device/form/mobile';
+            // @import 'pages/afterworld/device/form/desktop';
+            @import 'pages/afterworld/device/form/form';
+            @import 'pages/afterworld/device/form/textarea';
+            @import 'pages/afterworld/device/form/button';
+
+            // Question & Answers
+            // @import 'pages/afterworld/device/questionanswers/mobile';
+            // @import 'pages/afterworld/device/questionanswers/desktop';
+            @import 'pages/afterworld/device/questionanswers/container';
+            @import 'pages/afterworld/device/questionanswers/questions';
+            @import 'pages/afterworld/device/questionanswers/answers';
+            @import 'pages/afterworld/device/questionanswers/successmessage';
+
+            
+        
 
 
 

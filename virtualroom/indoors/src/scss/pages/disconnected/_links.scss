@@ -1,0 +1,13 @@
+body.disconnected {
+    a {
+        font-family: 'Pangolin';
+        color: darkblue;
+
+        &.title-link {
+            color: black;
+        }
+    }
+    li a {
+        font-family: $font-title;
+    }
+}

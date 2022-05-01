@@ -1,0 +1,13 @@
+body.disconnected {
+    background-image: none;
+    background-color: wheat;
+
+    &.letter {
+        main{
+            max-width: 80rem;
+            background-color: #d8dbfab0;
+            padding: 3rem;
+            margin: 4rem auto;
+        }
+    }
+}

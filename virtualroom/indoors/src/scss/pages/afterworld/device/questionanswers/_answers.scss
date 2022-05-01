@@ -1,0 +1,29 @@
+.afterworld .device .question-answers {
+    // All the answers container
+    .answers {
+        // Single message block
+        padding-bottom: 5rem;
+        .message {
+            width: 75%;
+            background-color: $greymessenger;
+            border-radius: 1.5rem;
+            padding: 1rem;
+            margin: 1.5rem;
+            margin-bottom: 2rem;
+
+            @include desktop {
+                width: 45%;
+            }
+            
+            p {
+                margin: 0;
+                text-align: left;
+
+                @include desktop {
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+    }
+}

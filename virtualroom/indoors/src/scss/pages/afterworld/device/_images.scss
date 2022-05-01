@@ -1,0 +1,18 @@
+.afterworld .device {
+    .question-img {
+        width: 4rem;
+        height: 4rem; 
+        margin: .7rem;
+
+        &.img-conversation {
+            height: 4rem;
+            width: 4rem;
+            margin: .7rem 1rem;
+        }
+
+        &.img-left-arrow {
+            width: 1.5rem;
+            height: 2.7rem;
+        }
+    }
+}

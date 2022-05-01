@@ -1,0 +1,30 @@
+#waaw-header {
+    li {
+        line-height: 3.5rem;
+        font-size: 2rem;
+        color: $blue;
+
+        span.menu-title {
+            background-color: $darkGrey;
+        }
+
+        a {
+            color: $darkGrey;
+            padding: .7rem 0;
+            display: block;
+            &.active {
+                text-decoration: line-through;
+            }
+        }
+
+        li {
+
+             a::before {
+                display: inline-block;
+                content: "#";
+                content: "#" / "";
+                color: $darkGrey;
+            }
+        }
+    }
+}

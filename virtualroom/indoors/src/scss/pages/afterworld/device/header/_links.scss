@@ -1,0 +1,19 @@
+.afterworld .device header {
+    a {
+        display: flex;
+        padding: .5rem 1rem;
+        color: black;
+        align-items: center;
+
+        p {
+            margin: 0;
+            font-weight: bold;
+            line-height: 97%;
+            span {
+                font-weight: normal;
+                color: gray;
+                font-size: 1.4rem;
+            }
+        }        
+    }
+}
