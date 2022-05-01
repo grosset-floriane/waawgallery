@@ -188,7 +188,10 @@ return "
         $activeHome = "";
         $activeAbout = "";
 
-        switch($pageData["artwork_folder"]) {
+        $url = $_SERVER['REQUEST_URI']; 
+
+
+        switch($artworkFolder) {
             case "/virtualroom/indoors/":
                 $activeIndoors = "class=\"active\"";
                 break;
@@ -217,7 +220,7 @@ return "
 
 
 
-        $menu = "
+    return $menu = "
             <ul>
                 <li>
                     <a href=\"/\" $activeHome>
